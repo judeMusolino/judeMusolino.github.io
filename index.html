@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jude Musolino | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Filing Cabinet Screen -->
-  <div id="cabinet-screen">
-    <div class="cabinet-box" onclick="openCabinet()">
-      <h1>📁 Jude's Filing Cabinet</h1>
-      <p>Click to open</p>
+  <header class="hero">
+    <div class="keyring">
+      <img src="assets/keyring.svg" alt="Keyring" class="keyring-img" />
+      <h1>Jude Musolino</h1>
+      <p class="about">Developer & Designer. Unlock my work below.</p>
     </div>
-  </div>
+  </header>
 
-  <!-- Projects Grid -->
-  <div id="projects-screen" class="hidden">
-    <h2>Projects</h2>
-    <div class="folder-grid" id="projects-grid">
-      <!-- Folders will be rendered here -->
+  <main class="hooks">
+    <div class="hook">
+      <a href="projects.html" class="key-link">
+        <img src="assets/key.svg" alt="Projects Key" class="key" />
+        <span>Projects</span>
+      </a>
     </div>
-  </div>
-
-  <!-- File View -->
-  <div id="file-screen" class="hidden">
-    <button onclick="backToProjects()">⬅ Back to Folders</button>
-    <div id="file-content"></div>
-  </div>
-
-  <!-- Scripts -->
-  <script type="module" src="project-folder.js"></script>
-  <script type="module" src="project-file.js"></script>
-  <script src="app.js"></script>
+    <div class="hook">
+      <a href="design.html" class="key-link">
+        <img src="assets/key.svg" alt="Design Key" class="key" />
+        <span>Graphic Design</span>
+      </a>
+    </div>
+    <div class="hook">
+      <a href="work.html" class="key-link">
+        <img src="assets/key.svg" alt="Work Key" class="key" />
+        <span>Professional Work</span>
+      </a>
+    </div>
+  </main>
 </body>
 </html>

@@ -1,52 +1,69 @@
 body {
     margin: 0;
-    font-family: 'Courier New', monospace;
-    background: #f2f2f2;
-    color: #333;
+    font-family: "Helvetica Neue", sans-serif;
+    background: #fdfdfd;
+    color: #222;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .keyring-img {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .about {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Hooks with keys */
+  .hooks {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+  }
+  
+  .hook {
     text-align: center;
   }
   
-  /* Filing Cabinet Box */
-  .cabinet-box {
-    margin: 20vh auto;
-    padding: 3rem;
-    width: 300px;
-    background: #fff;
-    border: 2px solid #ccc;
-    box-shadow: 8px 8px 0px #aaa;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  .cabinet-box:hover {
-    transform: scale(1.05);
+  .key-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
   }
   
-  /* Folder Grid */
-  .folder-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+  .key {
+    width: 80px;
+    transition: transform 0.4s ease, filter 0.4s ease;
   }
   
-  /* File View */
-  #file-screen {
-    padding: 2rem;
-  }
-  #file-content {
-    background: #fff;
-    border: 2px solid #ccc;
-    padding: 2rem;
-    max-width: 600px;
-    margin: 2rem auto;
-    text-align: left;
-    box-shadow: 6px 6px 0px #aaa;
+  .key-link:hover .key {
+    transform: rotate(-10deg) translateY(-10px);
+    filter: drop-shadow(0 6px 6px rgba(0,0,0,0.2));
   }
   
-  /* Utility */
-  .hidden {
-    display: none;
+  .key-link span {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Back navigation */
+  .back-nav {
+    padding: 1rem;
+    background: #f7f7f7;
+  }
+  
+  .back-key {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2d572c; /* olive green accent */
   }
   
