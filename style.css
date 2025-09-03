@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: "Helvetica Neue", sans-serif;
-    background: #fdfdfd;
-    color: #222;
+    background: #262222;
+    color: #efefef
   }
   
   .hero {
@@ -17,7 +17,7 @@ body {
   
   .about {
     font-size: 1.1rem;
-    color: #555;
+    color: #dad8d8;
   }
   
   /* Hooks with keys */
