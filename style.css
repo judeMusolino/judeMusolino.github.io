@@ -1,123 +1,49 @@
-/* Reset & base styles */
+/* Global reset & base styles */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background: #f9f9f9;
+    background: #f4f4f4;
     color: #333;
   }
   
   /* Header */
   header {
     text-align: center;
-    background: #222;
-    color: #fff;
     padding: 2rem 1rem;
+    background: #2a4d2e;
+    color: #fff;
   }
-  
   header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  
-  .tagline {
-    margin: 0.5rem 0 1rem;
+  header .tagline {
+    margin-top: 0.5rem;
     font-style: italic;
-    color: #ccc;
+    color: #cfcfcf;
   }
   
-  nav a {
-    margin: 0 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Sections */
-  section {
-    padding: 3rem 1rem;
+  /* Cabinet (folder grid) */
+  #cabinet {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
     max-width: 900px;
     margin: auto;
   }
   
-  section h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #2a4d2e; /* Olive green accent */
-  }
-  
-  /* Projects */
-  .project-card {
-    background: #fff;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  .project-card h3 {
-    margin-top: 0;
-  }
-  
-  .project-card a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #2a4d2e;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .project-card a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Skills */
-  .skills-list {
+  /* Modal (file view) */
+  #file-view {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
+    padding: 2rem;
   }
-  
-  .skills-list li {
-    background: #eee;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-  }
-  
-  /* Contact */
-  #contact ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  #contact li {
-    margin: 0.5rem 0;
-  }
-  
-  #contact a {
-    color: #2a4d2e;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  #contact a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    background: #222;
-    color: #fff;
-    padding: 1rem;
-    margin-top: 2rem;
+  #file-view.hidden {
+    display: none;
   }
   

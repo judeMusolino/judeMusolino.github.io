@@ -7,56 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ===== Header ===== -->
   <header>
-    <h1>Jude Musolino</h1>
-    <p class="tagline">Enterprise Technology Integration | Application Development | Web Solutions</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>📂 Jude Musolino</h1>
+    <p class="tagline">Portfolio — Files & Folders</p>
   </header>
 
-  <!-- ===== About ===== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m Jude — a recent graduate from Penn State University with a B.S. in Enterprise Technology Integration.
-      I am passionate about building user-centered applications, integrating enterprise systems,
-      and solving business problems with technology. 
-    </p>
-  </section>
+  <main id="cabinet">
+    <!-- Folders will be injected dynamically -->
+  </main>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Web Storefront</h3>
-      <p>Built with HTML, Bootstrap, JavaScript, Node.js, Express, and MongoDB. Includes input validation and full-stack integration.</p>
-      <a href="https://github.com/judeMusolino/web-storefront" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>ERP Database Schema</h3>
-      <p>Designed an ER diagram and schema for a packaging manufacturing ERP system, covering courses, majors, and departments.</p>
-      <a href="https://github.com/judeMusolino/erp-database" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+  <!-- Modal container for file view -->
+  <div id="file-view" class="hidden"></div>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Let’s connect!</p>
-    <ul>
-      <li><a href="mailto:jude.musolino@gmail.com">Email</a></li>
-      <li><a href="https://www.linkedin.com/in/jude-musolino/" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/judeMusolino" target="_blank">GitHub</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 Jude Musolino</p>
-  </footer>
+  <!-- Scripts -->
+  <script type="module" src="project-folder.js"></script>
+  <script type="module" src="project-file.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
