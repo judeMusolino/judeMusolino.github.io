@@ -43,11 +43,11 @@ body {
   .key {
     width: 80px;
     transition: transform 0.4s ease, filter 0.4s ease;
-    transform-origin: bottom center;
+    transform-origin: top center;
   }
   
   .key-link:hover .key {
-    transform: rotate(-10deg) translateY(10px);
+    transform: rotate(-10deg);
     filter: drop-shadow(0 6px 6px rgba(0,0,0,0.2));
   }
   
