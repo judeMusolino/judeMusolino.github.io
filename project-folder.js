@@ -9,37 +9,29 @@ class ProjectFolder extends LitElement {
 
   static styles = css`
     .folder {
-      background: #fdd835; /* flat manila/yellow */
-      border-radius: 6px;
+      display: inline-block;
       padding: 1rem;
-      text-align: center;
+      border: 2px solid #ccc;
+      background: #fff;
+      box-shadow: 4px 4px 0px #aaa;
       cursor: pointer;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      transition: transform 0.2s;
     }
     .folder:hover {
       transform: translateY(-5px);
-    }
-    .icon {
-      font-size: 3rem;
-    }
-    h3 {
-      margin: 0.5rem 0 0;
-      font-size: 1rem;
     }
   `;
 
   render() {
     return html`
-      <div class="folder" @click=${this._openFile}>
-        <div class="icon">📁</div>
-        <h3>${this.title}</h3>
+      <div class="folder" @click=${() => this.openFile()}>
+        📂 <br>${this.title}
       </div>
     `;
   }
 
-  _openFile() {
-    const event = new CustomEvent("open-file", {
+  openFile() {
+    const event = new CustomEvent('open-project', {
       detail: { title: this.title, description: this.description, link: this.link },
       bubbles: true,
       composed: true

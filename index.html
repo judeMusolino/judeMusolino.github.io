@@ -7,21 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>📂 Jude Musolino</h1>
-    <p class="tagline">Portfolio — Files & Folders</p>
-  </header>
+  <!-- Filing Cabinet Screen -->
+  <div id="cabinet-screen">
+    <div class="cabinet-box" onclick="openCabinet()">
+      <h1>📁 Jude's Filing Cabinet</h1>
+      <p>Click to open</p>
+    </div>
+  </div>
 
-  <main id="cabinet">
-    <!-- Folders will be injected dynamically -->
-  </main>
+  <!-- Projects Grid -->
+  <div id="projects-screen" class="hidden">
+    <h2>Projects</h2>
+    <div class="folder-grid" id="projects-grid">
+      <!-- Folders will be rendered here -->
+    </div>
+  </div>
 
-  <!-- Modal container for file view -->
-  <div id="file-view" class="hidden"></div>
+  <!-- File View -->
+  <div id="file-screen" class="hidden">
+    <button onclick="backToProjects()">⬅ Back to Folders</button>
+    <div id="file-content"></div>
+  </div>
 
   <!-- Scripts -->
   <script type="module" src="project-folder.js"></script>
   <script type="module" src="project-file.js"></script>
-  <script type="module" src="main.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
