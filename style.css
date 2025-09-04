@@ -168,5 +168,9 @@ body {
   }
   
 .page-title {
-  padding: 1rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-weight: bold;
 }
