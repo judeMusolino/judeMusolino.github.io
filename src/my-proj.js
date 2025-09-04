@@ -13,6 +13,8 @@ export class MyProj extends LitElement {
       date: { type: String },
       link1: { type: String },
       link2: { type: String },
+      link1name: { type: String },
+      link2name: { type: String },
       showModal: { type: Boolean },
     };
   }
@@ -25,6 +27,8 @@ export class MyProj extends LitElement {
     this.date = "";
     this.link1 = "";
     this.link2 = "";
+    this.link1name = "";
+    this.link2name = "";
     this.showModal = false;
   }
 
@@ -33,6 +37,7 @@ export class MyProj extends LitElement {
       :host { 
         display: inline-flex; 
         align-content: left; 
+        margin: 4rem;
       }
 
       .proj {
@@ -113,8 +118,8 @@ export class MyProj extends LitElement {
           <p>${this.para}</p>
           <p><strong>Date:</strong> ${this.date}</p>
           <div class="links">
-            ${this.link1 ? html`<a href="${this.link1}" target="_blank">Link 1</a>` : ''}
-            ${this.link2 ? html`<a href="${this.link2}" target="_blank">Link 2</a>` : ''}
+            ${this.link1 ? html`<a href="${this.link1}" target="_blank">${this.link1name}</a>` : ''}
+            ${this.link2 ? html`<a href="${this.link2}" target="_blank">${this.link2name}</a>` : ''}
           </div>
         </div>
       </div>
