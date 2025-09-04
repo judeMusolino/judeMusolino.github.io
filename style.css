@@ -36,12 +36,13 @@ body {
     color: #dad8d8;
   }
   
-  /* Hooks with keys */
-  .hooks {
+  .container {
     display: flex;
     justify-content: center;
     gap: 4rem;
     margin-top: 4rem;
+    color:#efefef;
+    box-shadow: 5px 5px 0px 0px #3366ff;
   }
   
   .hook {
@@ -61,7 +62,7 @@ body {
     transition: transform 0.4s ease, filter 0.4s ease;
     transform-origin: top center;
   }
-  
+  /*
   .key-link:hover .key {
     transform: rotate(10deg);
     filter: drop-shadow(0 6px 6px rgba(0,0,0,0.2));
@@ -71,7 +72,8 @@ body {
     margin-top: 0.5rem;
     font-weight: bold;
   }
-  
+  */
+
   /* Back navigation */
   .back-nav {
     padding: 1rem;
@@ -81,6 +83,6 @@ body {
   .back-key {
     text-decoration: none;
     font-weight: bold;
-    color: #3366ff; /* olive green accent */
+    color: #3366ff;
   }
   
