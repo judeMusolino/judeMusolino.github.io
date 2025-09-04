@@ -41,7 +41,7 @@ export class MyProj extends LitElement {
 
       .proj {
         width: 100%;
-        margin: 1rem 0; 
+        margin: 1rem 1rem; 
         border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
