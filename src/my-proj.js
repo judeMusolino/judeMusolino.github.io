@@ -37,13 +37,14 @@ export class MyProj extends LitElement {
 
       .proj {
         width: 400px;
-        border-radius: 8%;
+        border-radius: 10%;
         overflow: hidden;
         cursor: pointer;
         background: #efefef;
         border: 1px solid #131111;
         box-shadow: 2px 2px 0 #131111;
-        transition: transform 0.2s;
+        transition: transform 0.4s ease, filter 0.4s ease;
+        transform-origin: top center;
       }
 
       .proj:hover {
