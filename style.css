@@ -70,7 +70,7 @@ body {
   padding: 2rem;
   background: #efefef;
   border: 1px solid #131111;
-  border-radius: 10px;
+  border-radius: 5%;
   box-shadow: 4px 4px 0 #131111;
   text-align: center;
 }
@@ -121,7 +121,7 @@ body {
   font-weight: bold;
   padding: 0.4rem 0.8rem;
   border: 1px solid #131111;
-  border-radius: 10px;   
+  border-radius: 5%;   
   background: #efefef;   
   box-shadow: 2px 2px 0 #131111;
   display: inline-block;
@@ -168,8 +168,8 @@ body {
   }
   
 .page-title {
-  margin-left: 3rem;
-  margin-top: 3rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
   margin-bottom: 0;
   font-size: 4rem;
   font-weight: bold;

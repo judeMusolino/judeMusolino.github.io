@@ -32,15 +32,18 @@ export class MyProj extends LitElement {
     return css`
       :host { 
         display: inline-flex; 
+        align-content: left;
         margin: 12px; 
       }
 
       .proj {
-        width: 30%;
-        border-radius: 8px;
+        width: 400px;
+        border-radius: 5%;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        background: #efefef;
+        border: 1px solid #131111;
+        box-shadow: 2px 2px 0 #131111;
         transition: transform 0.2s;
       }
 
