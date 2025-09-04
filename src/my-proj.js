@@ -32,13 +32,12 @@ export class MyProj extends LitElement {
     return css`
       :host { 
         display: inline-flex; 
-        align-content: left;
-        margin: 12px; 
+        align-content: left; 
       }
 
       .proj {
         width: 400px;
-        border-radius: 5%;
+        border-radius: 8%;
         overflow: hidden;
         cursor: pointer;
         background: #efefef;
@@ -65,7 +64,7 @@ export class MyProj extends LitElement {
 
       .modal {
         background: #fff;
-        border-radius: 10px;
+        border-radius: 8%;
         width: 400px;
         max-width: 90%;
         padding: 20px;

@@ -70,7 +70,7 @@ body {
   padding: 2rem;
   background: #efefef;
   border: 1px solid #131111;
-  border-radius: 5%;
+  border-radius: 8%;
   box-shadow: 4px 4px 0 #131111;
   text-align: center;
 }
@@ -121,7 +121,7 @@ body {
   font-weight: bold;
   padding: 0.4rem 0.8rem;
   border: 1px solid #131111;
-  border-radius: 5%;   
+  border-radius: 8%;   
   background: #efefef;   
   box-shadow: 2px 2px 0 #131111;
   display: inline-block;
