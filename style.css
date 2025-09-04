@@ -54,7 +54,7 @@ body {
   margin: 2rem auto;
   padding: 2rem;
   background: #efefef;
-  border: 1px #131111;
+  border: 1px solid #131111;
   border-radius: 10px;
   box-shadow: 4px 4px 0 #131111;
   text-align: center;
@@ -86,7 +86,7 @@ body {
   transform-origin: top center;
 }
 
-.key-link:hover .key {
+.key-link:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 6px 6px rgba(0,0,0,0.4));
 }
@@ -95,7 +95,7 @@ body {
   margin-top: 0.5rem;
   font-weight: bold;
   padding: 0.4rem 0.8rem;
-  border: 1px #131111;
+  border: 1px solid #131111;
   border-radius: 10px;   
   background: #efefef;   
   box-shadow: 2px 2px 0 #131111;
