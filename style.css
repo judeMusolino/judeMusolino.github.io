@@ -178,8 +178,7 @@ body {
 .wrapper2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px; 
-  padding: 20px;
+  justify-content: space-between;
 }
 
 @media (max-width: 900px) {
