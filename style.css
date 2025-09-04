@@ -36,11 +36,6 @@ body {
   cursor: pointer;
 }
 
-.hero {
-  text-align: center;
-  padding: 2rem;
-}
-
 .about {
   font-size: 1.1rem;
   color: #dad8d8;
