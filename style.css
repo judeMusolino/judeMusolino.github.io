@@ -49,6 +49,10 @@ body {
   color: #131111;
 }
 
+.title {
+  font-size: 4rem;
+}
+
 .main-box {
   max-width: 600px;
   margin: 2rem auto;
