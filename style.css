@@ -160,7 +160,6 @@ body {
   /* Back navigation */
   .back-nav {
     padding: 1rem;
-    background: #262222;
   }
   
   .back-key {
@@ -168,3 +167,6 @@ body {
     color: #3366ff;
   }
   
+.page-title {
+  padding: 1rem;
+}
