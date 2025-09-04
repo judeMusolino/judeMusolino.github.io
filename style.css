@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: "Space Mono", monospace;
-  background-color: #131111;
-  color: #efefef;
+  background-color: #efefef;
+  color: #131111;
 
   background-image: 
     repeating-linear-gradient(
@@ -39,10 +39,11 @@ body {
 .hero {
   text-align: center;
   padding: 1rem;
+  font-weight: bold;
 }
 
 .about {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #dad8d8;
 }
 
@@ -50,13 +51,13 @@ body {
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #1f1c1c;
-  border-radius: 12px;
-  box-shadow: 4px 4px 0 #efefef;
+  background: #efefef;
+  border: 1px #131111;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #131111;
   text-align: center;
 }
 
-/* Keys section */
 .wrapper {
   display: flex;
   justify-content: center;
@@ -83,20 +84,24 @@ body {
 }
 
 .key-link:hover .key {
-  transform: rotate(10deg);
+  transform: scale(1.05);
   filter: drop-shadow(0 6px 6px rgba(0,0,0,0.4));
 }
 
 .key-link span {
   margin-top: 0.5rem;
   font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;   
+  background: #efefef;   
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+  display: inline-block;
 }
 
-/* Contact section */
 .contact {
   text-align: center;
   padding: 2rem;
-  background: #1a1818;
+  background: #131111;
   margin-top: 3rem;
   border-top: 1px solid #00000099;
 }
