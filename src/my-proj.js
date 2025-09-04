@@ -41,8 +41,8 @@ export class MyProj extends LitElement {
       }
 
       .proj {
-        width: 400px;
-        border-radius: 10%;
+        width: 100%;
+        border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
         background: #efefef;
@@ -65,7 +65,7 @@ export class MyProj extends LitElement {
         display: flex;
         position: fixed;
         top: 0; left: 0; right: 0; bottom: 0;
-        background: #13111199;
+        background: #1311116a;
         justify-content: center;
         align-items: center;
         z-index: 1000;
@@ -77,7 +77,7 @@ export class MyProj extends LitElement {
         max-width: 50%;
         padding: 20px;
         position: relative;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        box-shadow: 0 6px 6px #13111199;
       }
 
       .close-btn {
