@@ -1,8 +1,24 @@
 body {
     margin: 0;
     font-family: "Helvetica Neue", sans-serif;
-    background: #262222;
-    color: #efefef
+    background-color: #131111;
+    color: #efefef;
+
+    background-image: 
+      repeating-linear-gradient(
+        to right,
+        #efefef 0px,
+        #efefef 1px,
+        transparent 1px,
+        transparent 20px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #efefef 0px,
+        #efefef 1px,
+        transparent 1px,
+        transparent 20px
+      );
   }
   
   .hero {
