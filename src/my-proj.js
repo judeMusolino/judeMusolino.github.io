@@ -59,7 +59,7 @@ export class MyProj extends LitElement {
 
       .proj img { width: 100%; height: 180px; object-fit: cover; }
 
-      .proj-title { text-align: center; font-weight: bold; margin: 8px 0; }
+      .proj-title { text-align: center; font-weight: bold; margin: 8px 8px; }
 
       .modal-overlay {
         display: flex;
