@@ -74,8 +74,7 @@ export class MyProj extends LitElement {
       .modal {
         background: #fff;
         border-radius: 8%;
-        width: 400px;
-        max-width: 90%;
+        max-width: 50%;
         padding: 20px;
         position: relative;
         box-shadow: 0 4px 12px rgba(0,0,0,0.4);
