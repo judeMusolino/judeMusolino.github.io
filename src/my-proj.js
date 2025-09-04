@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from 'https://unpkg.com/lit@3.1.2/index.js?module';
 
 export class MyProj extends LitElement {
   static get tag() {
