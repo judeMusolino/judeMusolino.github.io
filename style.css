@@ -176,6 +176,8 @@ body {
 }
 
 .wrapper2 {
+  margin: 2rem 4rem;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;

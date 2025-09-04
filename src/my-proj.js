@@ -37,12 +37,11 @@ export class MyProj extends LitElement {
       :host { 
         display: inline-flex; 
         align-content: left; 
-        margin: 2rem 4rem;
       }
 
       .proj {
         width: 100%;
-        margin: 0; 
+        margin: 1rem 0; 
         border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
@@ -75,6 +74,7 @@ export class MyProj extends LitElement {
         background: #fff;
         border-radius: 8%;
         max-width: 50%;
+        max-height: auto; 
         padding: 20px;
         position: relative;
         box-shadow: 0 6px 6px #13111199;
