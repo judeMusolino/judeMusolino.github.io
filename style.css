@@ -34,14 +34,16 @@ body {
 .hamburger {
   font-size: 1.5rem;
   cursor: pointer;
+  color:#efefef;
 }
 
 .hero {
   text-align: left;
-  padding: 1rem 3rem;
+  padding: 1rem 6rem;
 }
 
 .name {
+  margin: 0;
   font-size: 6rem;
   font-weight: bold;
   color: #131111;
@@ -92,6 +94,7 @@ body {
   margin-top: 0.5rem;
   font-weight: bold;
   padding: 0.4rem 0.8rem;
+  border: 1px #131111;
   border-radius: 10px;   
   background: #efefef;   
   box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
