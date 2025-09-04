@@ -38,13 +38,13 @@ body {
 
 .hero {
   text-align: left;
-  padding: 1rem;
+  padding: 1rem 3rem;
 }
 
 .name {
   font-size: 6rem;
   font-weight: bold;
-  color: #dad8d8;
+  color: #131111;
 }
 
 .main-box {
