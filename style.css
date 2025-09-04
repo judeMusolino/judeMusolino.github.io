@@ -42,7 +42,7 @@ body {
 }
 
 .name {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0;
   font-size: 8rem;
   font-weight: bold;
@@ -50,12 +50,14 @@ body {
 }
 
 .title {
-  font-size: 4rem;
+  margin-top: 1rem;
+  font-size: 2rem;
 }
 
 .main-box {
   max-width: 600px;
-  margin: 2rem auto;
+  font-size: 4rem;
+  margin: 2rem;
   padding: 2rem;
   background: #efefef;
   border: 1px solid #131111;
@@ -68,7 +70,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 4rem;
-  margin: 4rem 0;
+  margin: 6rem 0;
 }
 
 .hook {
