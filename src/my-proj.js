@@ -89,7 +89,10 @@ export class MyProj extends LitElement {
         font-weight: bold;
       }
 
-      .modal img { width: 100%; border-radius: 5px; margin-bottom: 10px; }
+      .modal img { 
+        max-height: 60vh;
+        max-width: 100%; 
+        border-radius: 5px; margin-bottom: 10px; }
 
       .modal h2 { margin-top: 0; }
 
