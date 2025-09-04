@@ -74,7 +74,7 @@ export class MyProj extends LitElement {
         background: #fff;
         border-radius: 8%;
         max-width: 50%;
-        max-height: auto; 
+        max-height: 80%; 
         padding: 20px;
         position: relative;
         box-shadow: 0 6px 6px #13111199;
