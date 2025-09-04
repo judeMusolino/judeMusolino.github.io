@@ -30,10 +30,13 @@ export class MyProj extends LitElement {
 
   static get styles() {
     return css`
-      :host { display: inline-block; margin: 12px; }
+      :host { 
+        display: inline-flex; 
+        margin: 12px; 
+      }
 
       .proj {
-        width: 300px;
+        width: 30%;
         border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
