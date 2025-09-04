@@ -46,7 +46,10 @@ export class MyProj extends LitElement {
         transition: transform 0.2s;
       }
 
-      .proj:hover { transform: scale(1.03); }
+      .proj:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 6px 6px #1311116a);
+      }
 
       .proj img { width: 100%; height: 180px; object-fit: cover; }
 

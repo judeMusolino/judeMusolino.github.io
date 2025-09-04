@@ -113,7 +113,7 @@ body {
 
 .key-link:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 6px 6px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 6px 6px #1311116a);
 }
 
 .key-link span {
