@@ -5,12 +5,12 @@ import "@lrnwebcomponents/meme-maker/meme-maker.js";
 export class MyProj extends LitElement {
 
   static get tag() {
-    return 'my-card';
+    return 'my-proj';
   }
 
   constructor() {
     super();
-    this.description="This is the description of the project.";
+    this.para="This is the description of the project.";
     this.title="Project Title";
     this.image="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"; 
     this.button="Details"; 
@@ -75,9 +75,7 @@ export class MyProj extends LitElement {
       <div class="wrapper">
       <div class="proj">
       <div class="heading">${this.title}</div>
-      <div class="image">
-      <meme-maker class="meme" alt="Cat stalking a small toy" image-url="${this.image}" top-text="" bottom-text=""> </meme-maker> 
-      </div>
+      <div class="image">${this.image}</div>
       <p class="para">${this.para}</p>
       <button class="btn">${this.button}</button>
     </details>
@@ -92,8 +90,6 @@ export class MyProj extends LitElement {
       image: { type:  String },
       para: { type: String },
       button: { type: String },
-      link: { type: String },
-      fancy: { type: Boolean, reflect: true },
     };
   }
 }

@@ -10,18 +10,17 @@ body {
       #efefef 0px,
       #efefef 1px,
       transparent 1px,
-      transparent 40px
+      transparent 160px
     ),
     repeating-linear-gradient(
       to bottom,
       #efefef 0px,
       #efefef 1px,
       transparent 1px,
-      transparent 120px
+      transparent 40px
     );
 }
 
-/* Top bar */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -37,7 +36,6 @@ body {
   cursor: pointer;
 }
 
-/* Hero section */
 .hero {
   text-align: center;
   padding: 2rem;
@@ -48,7 +46,6 @@ body {
   color: #dad8d8;
 }
 
-/* Main square container */
 .main-box {
   max-width: 600px;
   margin: 2rem auto;
@@ -132,7 +129,6 @@ body {
   }
   
   .back-key {
-    text-decoration: none;
     font-weight: bold;
     color: #3366ff;
   }
