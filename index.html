@@ -10,10 +10,16 @@
   </style>
 </head>
 <body>
-  <!-- Top bar -->
   <header class="topbar">
     <div class="toptext">Jude Musolino | Portfolio</div>
     <div class="hamburger">☰</div>
+
+    <nav class="menu" id="menu">
+      <a href="projects.html">Projects</a>
+      <a href="design.html">Graphic Design</a>
+      <a href="work.html">Professional Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section class="hero">
@@ -21,7 +27,6 @@
     <p class="title">&lt; designer and developer &gt;</p>
   </section>
 
-  <!-- Main content container -->
   <main class="main">
     <h2 class="box-title">WELCOME</h2>
     <div class="main-box">
@@ -55,5 +60,21 @@
     <p>Email: <a href="mailto:jude.musolino@gmail.com">jude.musolino@gmail.com</a></p>
     <p>LinkedIn: <a href="#">linkedin.com/in/jude-musolino</a></p>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
+    });
+  </script>
+
 </body>
 </html>

@@ -43,6 +43,34 @@ body {
   color: #3366ff;
 }
 
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #131111;
+  width: 200px;
+  text-align: right;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.menu a {
+  color: #efefefef;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu.active {
+  display: flex;
+}
+
 .hero {
   text-align: left;
   padding: 1rem 6rem;
@@ -154,7 +182,6 @@ body {
   }
   */
 
-  /* Back navigation */
   .back-nav {
     padding: 1rem;
   }
