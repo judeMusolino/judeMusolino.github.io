@@ -24,6 +24,72 @@
 
   <div class="overlay" id="overlay"></div>
 
+  <style>
+    /* Top bar */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #131111;
+      color: white;
+      position: relative;
+      z-index: 1100;
+    }
+
+    .hamburger {
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 1300; /* ensure it's above everything */
+      position: relative;
+    }
+
+    /* Side menu panel */
+    .menu {
+      display: none; /* hidden by default */
+      position: fixed; /* fixed so it doesn't push content */
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #131111;
+      padding: 2rem 1rem;
+      box-shadow: -2px 0 5px #13111199;
+      z-index: 1200; /* above overlay */
+      overflow-y: auto; /* scroll if menu is long */
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Overlay */
+    .overlay {
+      display: none; /* hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #1311116a;
+      z-index: 1100; /* below menu */
+    }
+
+    /* Show menu and overlay */
+    .menu.active,
+    .overlay.active {
+      display: block;
+    }
+  </style>
+
   <section class="hero">
     <p class="name">JUDE MUSOLINO</p>
     <p class="title">&lt; designer and developer &gt;</p>
@@ -87,6 +153,5 @@
       overlay.classList.remove('active');
     });
   </script>
-
 </body>
 </html>
