@@ -85,12 +85,12 @@ export class MyProj extends LitElement {
 
       .close-bar {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         width: 100%;
         height: auto;
         background: #3366ff;
         border-bottom: 1px solid #131111;
-        padding: 4px 4px;
+        padding: 4px 12px;
       }
 
       .close-btn {
@@ -99,7 +99,6 @@ export class MyProj extends LitElement {
         font-weight: bold;
         border: 1px solid #131111;
         border-radius: 50%;
-        margin: 4px;
         padding: 4px;
         background: #efefefef;   
         color: #131111;   
