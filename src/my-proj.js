@@ -44,7 +44,7 @@ export class MyProj extends LitElement {
         border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
-        background: #131111;
+        background: #3366ff;
         border: 1px solid #131111;
         box-shadow: 2px 2px 0 #131111;
         transform-origin: top center;
@@ -89,7 +89,7 @@ export class MyProj extends LitElement {
         height: 32px;
         background: #efefefef;
         border-bottom: 1px solid #131111;
-        padding: 0 8px;
+        padding: 0 32px;
       }
 
       .close-btn {
