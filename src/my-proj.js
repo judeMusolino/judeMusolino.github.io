@@ -44,7 +44,7 @@ export class MyProj extends LitElement {
         border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
-        background: #efefef;
+        background: #131111;
         border: 1px solid #131111;
         box-shadow: 2px 2px 0 #131111;
         transform-origin: top center;
@@ -57,7 +57,7 @@ export class MyProj extends LitElement {
 
       .proj img { width: 100%; height: 180px; object-fit: cover; }
 
-      .proj-title { text-align: center; font-weight: bold; margin: 8px 8px; }
+      .proj-title { text-align: center; font-weight: bold; margin: 8px 8px; color: #131111; }
 
       .modal-overlay {
         display: flex;
@@ -84,11 +84,10 @@ export class MyProj extends LitElement {
 
       .close-bar {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        justify-content: right;
         width: 100%;
-        height: 26px;
-        background: #ddd;
+        height: 32px;
+        background: #efefefef;
         border-bottom: 1px solid #131111;
         padding: 0 8px;
       }
@@ -98,14 +97,14 @@ export class MyProj extends LitElement {
         font-size: 1rem;
         font-weight: bold;
         border: 1px solid #131111;
-        border-radius: 6px;   
+        border-radius: 50%;   
         background: #efefef;   
         box-shadow: 1px 1px 0 #131111;
         padding: 0 6px;
       }
 
       .modal-content {
-        padding: 20px;
+        padding: 12px 20px 20px;
         display: flex; 
         flex-wrap: wrap;
         justify-content: center;
@@ -113,7 +112,7 @@ export class MyProj extends LitElement {
       }
 
       .modal img { 
-        max-height: 60vh;
+        max-height: 50vh;
         max-width: 80%; 
         border-radius: 5px; margin-bottom: 10px; }
 
