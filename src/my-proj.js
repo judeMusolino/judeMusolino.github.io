@@ -90,7 +90,7 @@ export class MyProj extends LitElement {
         height: auto;
         background: #131111;
         border-bottom: 1px solid #131111;
-        padding: 4px 16px;
+        padding: 4px 4px;
       }
 
       .close-btn {
