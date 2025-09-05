@@ -1,0 +1,44 @@
+<header class="topbar">
+    <div class="toptext">Jude Musolino | Portfolio</div>
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <nav class="menu" id="menu">
+        <a href="projects.html" >Projects</a>
+        <a href="design.html" >Graphic Design</a>
+        <a href="work.html" >Professional Work</a>
+        <a href="#contact" >Contact</a>
+    </nav>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+
+        hamburger.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          overlay.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.menu a').forEach(link => {
+          link.addEventListener('click', () => {
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+          });
+        });
+
+        overlay.addEventListener('click', () => {
+          menu.classList.remove('active');
+          overlay.classList.remove('active');
+        });
+      })
+      .catch(err => console.error('Error loading header:', err));
+</script>
+
