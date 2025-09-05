@@ -83,6 +83,7 @@ export class MyProj extends LitElement {
 
       .close-bar {
         top: 0px;
+        justify-content: right;
         width: 100%;
         border: 1px solid #131111;
         background: #efefef;
@@ -102,7 +103,7 @@ export class MyProj extends LitElement {
       }
 
       .modal img { 
-        max-height: 80vh;
+        max-height: 60vh;
         max-width: 100%; 
         border-radius: 5px; margin-bottom: 10px; }
 
@@ -130,7 +131,7 @@ export class MyProj extends LitElement {
       <div class="modal-overlay" @click=${e => { if(e.target.classList.contains('modal-overlay')) this.toggleModal(); }}>
         <div class="modal">
           <div class="close-bar">
-            <div class="close-btn" @click=${this.toggleModal}>×</div>
+            <div class="close-btn" @click=${this.toggleModal}> X </div>
           </div>
           <img src="${this.image}" alt="${this.title}" />
           <div class="modalwrapper">
