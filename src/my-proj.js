@@ -88,7 +88,7 @@ export class MyProj extends LitElement {
         justify-content: center;
         width: 100%;
         height: auto;
-        background: #131111;
+        background: #3366ff;
         border-bottom: 1px solid #131111;
         padding: 4px 4px;
       }
@@ -98,10 +98,10 @@ export class MyProj extends LitElement {
         font-size: 1rem;
         font-weight: bold;
         border: 1px solid #131111;
-        border-radius: 50%;
-        margin: 4px;
-        background: #3366ff;   
-        color: #efefef;   
+        border-radius: 25%;
+        margin: 2px;
+        background: #efefefef;   
+        color: #131111;   
         box-shadow: 1px 1px 0 #131111;
       }
 
@@ -143,7 +143,7 @@ export class MyProj extends LitElement {
       <div class="modal-overlay" @click=${e => { if(e.target.classList.contains('modal-overlay')) this.toggleModal(); }}>
         <div class="modal">
           <div class="close-bar">
-            <div class="close-btn" @click=${this.toggleModal}> X </div>
+            <span class="close-btn" @click=${this.toggleModal}> X </span>
           </div>
           <div class="modal-content">
             <img src="${this.image}" alt="${this.title}" />
