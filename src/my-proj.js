@@ -74,16 +74,12 @@ export class MyProj extends LitElement {
         border-radius: 10px;
         width: 60%;
         max-height: 90%; 
-        padding: 0;
-        box-shadow: 0 6px 6px #13111199;
-      }
-
-      .modalwrapper {
-        padding: 20px; 
+        padding: 20px;
         position: fixed;
         display: flex; 
         flex-wrap: wrap;
         justify-content: center;
+        box-shadow: 0 6px 6px #13111199;
       }
 
       .close-bar {
@@ -140,16 +136,15 @@ export class MyProj extends LitElement {
           <div class="close-bar">
             <div class="close-btn" @click=${this.toggleModal}> X </div>
           </div>
-          <div class="modalwrapper">
-            <img src="${this.image}" alt="${this.title}" />
-            <div class="textwrapper">
-              <h2>${this.title}</h2>
-              <p>${this.para}</p>
-              <p><strong>Date:</strong> ${this.date}</p>
-              <div class="links">
-                ${this.link1 ? html`<a href="${this.link1}" target="_blank">${this.link1name}</a>` : ''}
-                ${this.link2 ? html`<a href="${this.link2}" target="_blank">${this.link2name}</a>` : ''}
-              </div>
+
+          <img src="${this.image}" alt="${this.title}" />
+          <div class="textwrapper">
+            <h2>${this.title}</h2>
+            <p>${this.para}</p>
+            <p><strong>Date:</strong> ${this.date}</p>
+            <div class="links">
+              ${this.link1 ? html`<a href="${this.link1}" target="_blank">${this.link1name}</a>` : ''}
+              ${this.link2 ? html`<a href="${this.link2}" target="_blank">${this.link2name}</a>` : ''}
             </div>
           </div>
         </div>
