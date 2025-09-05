@@ -25,7 +25,6 @@
   <div class="overlay" id="overlay"></div>
 
   <style>
-    /* Top bar */
     .topbar {
       display: flex;
       justify-content: space-between;
@@ -40,23 +39,22 @@
     .hamburger {
       font-size: 2rem;
       cursor: pointer;
-      z-index: 1300; /* ensure it's above everything */
+      z-index: 1300;
       position: relative;
     }
 
-    /* Side menu panel */
     .menu {
-      display: none; /* hidden by default */
-      position: fixed; /* fixed so it doesn't push content */
+      display: none; 
+      position: fixed; 
       top: 0;
       right: 0;
-      width: 250px;
+      width: 30%;
       height: 100%;
       background-color: #131111;
       padding: 2rem 1rem;
       box-shadow: -2px 0 5px #13111199;
-      z-index: 1200; /* above overlay */
-      overflow-y: auto; /* scroll if menu is long */
+      z-index: 1200; 
+      overflow-y: auto;
     }
 
     .menu a {
@@ -71,19 +69,17 @@
       text-decoration: underline;
     }
 
-    /* Overlay */
     .overlay {
-      display: none; /* hidden by default */
+      display: none; 
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 70%;
       height: 100%;
       background-color: #1311116a;
-      z-index: 1100; /* below menu */
+      z-index: 1100; 
     }
 
-    /* Show menu and overlay */
     .menu.active,
     .overlay.active {
       display: block;
