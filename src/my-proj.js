@@ -99,7 +99,7 @@ export class MyProj extends LitElement {
         font-weight: bold;
         border: 1px solid #131111;
         border-radius: 50%;
-        margin: 2px 4px;
+        margin: 4px 8px;
         background: #efefefef;   
         color: #131111;   
         box-shadow: 1px 1px 0 #131111;
