@@ -81,13 +81,24 @@ export class MyProj extends LitElement {
         box-shadow: 0 6px 6px #13111199;
       }
 
+      .close-bar {
+        top: 0px;
+        width: 100%;
+        border: 1px solid #131111;
+        background: #efefef;
+      }
+
       .close-btn {
         position: absolute;
         top: 10px;
         right: 15px;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: bold;
+        border: 1px solid #131111;
+        border-radius: 10px;   
+        background: #efefef;   
+        box-shadow: 2px 2px 0 #131111;
       }
 
       .modal img { 
@@ -95,6 +106,9 @@ export class MyProj extends LitElement {
         max-width: 100%; 
         border-radius: 5px; margin-bottom: 10px; }
 
+      .modalwrapper {
+        padding: 0;
+      }
       .modal h2 { margin-top: 0; }
 
       .links a { margin-right: 10px; color: blue; text-decoration: underline; }
@@ -115,14 +129,18 @@ export class MyProj extends LitElement {
       ${this.showModal ? html`
       <div class="modal-overlay" @click=${e => { if(e.target.classList.contains('modal-overlay')) this.toggleModal(); }}>
         <div class="modal">
-          <div class="close-btn" @click=${this.toggleModal}>×</div>
+          <div class="close-bar">
+            <div class="close-btn" @click=${this.toggleModal}>×</div>
+          </div>
           <img src="${this.image}" alt="${this.title}" />
-          <h2>${this.title}</h2>
-          <p>${this.para}</p>
-          <p><strong>Date:</strong> ${this.date}</p>
-          <div class="links">
-            ${this.link1 ? html`<a href="${this.link1}" target="_blank">${this.link1name}</a>` : ''}
-            ${this.link2 ? html`<a href="${this.link2}" target="_blank">${this.link2name}</a>` : ''}
+          <div class="modalwrapper">
+            <h2>${this.title}</h2>
+            <p>${this.para}</p>
+            <p><strong>Date:</strong> ${this.date}</p>
+            <div class="links">
+              ${this.link1 ? html`<a href="${this.link1}" target="_blank">${this.link1name}</a>` : ''}
+              ${this.link2 ? html`<a href="${this.link2}" target="_blank">${this.link2name}</a>` : ''}
+            </div>
           </div>
         </div>
       </div>
