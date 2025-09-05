@@ -100,7 +100,7 @@ export class MyProj extends LitElement {
         border: 1px solid #131111;
         border-radius: 50%;
         padding: 4px 8px;
-        margin-right: 12px;
+        margin-right: 16px;
         background: #efefefef;   
         color: #131111;   
         box-shadow: 1px 1px 0 #131111;
