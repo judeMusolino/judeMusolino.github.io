@@ -87,10 +87,10 @@ export class MyProj extends LitElement {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        height: 32px;
+        height: auto;
         background: #131111;
         border-bottom: 1px solid #131111;
-        padding: 0 16px;
+        padding: 4px 16px;
       }
 
       .close-btn {
@@ -99,13 +99,14 @@ export class MyProj extends LitElement {
         font-weight: bold;
         border: 1px solid #131111;
         border-radius: 50%;
+        margin: 4px;
         background: #3366ff;   
         color: #efefef;   
         box-shadow: 1px 1px 0 #131111;
       }
 
       .modal-content {
-        padding: 12px 20px 20px;
+        padding: 8px 20px 20px;
         display: flex; 
         flex-wrap: wrap;
         justify-content: center;
