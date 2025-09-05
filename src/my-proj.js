@@ -72,18 +72,12 @@ export class MyProj extends LitElement {
       .modal {
         background: #efefef;
         border-radius: 10px;
-        width: 70%;
-        height: 90vh; 
+        width: 60%;
+        max-height: 90%; 
         padding: 20px;
         position: fixed;
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%)(-50%);
-        display: flex;
+        display: flex; 
         flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center; 
-        overflow: hidden; 
         box-shadow: 0 6px 6px #13111199;
       }
 
@@ -97,24 +91,11 @@ export class MyProj extends LitElement {
       }
 
       .modal img { 
-        flex: 1 1 300px;
         max-height: 80vh;
         max-width: 100%; 
-        height: auto;
-        object-fit: contain;
-        border-radius: 5px; 
-        margin: 10px; 
-      }
+        border-radius: 5px; margin-bottom: 10px; }
 
-      .modal-content {
-        flex: 1 1 250px; 
-        margin: 10px; 
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; 
-      }
-
-      .modal-content h2 { margin-top: 0; }
+      .modal h2 { margin-top: 0; }
 
       .links a { margin-right: 10px; color: blue; text-decoration: underline; }
     `;
