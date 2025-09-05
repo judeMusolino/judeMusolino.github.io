@@ -74,34 +74,42 @@ export class MyProj extends LitElement {
         border-radius: 10px;
         width: 60%;
         max-height: 90%; 
-        padding: 20px;
         position: fixed;
         display: flex; 
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         box-shadow: 0 6px 6px #13111199;
+        overflow: hidden; 
       }
 
       .close-bar {
-        top: 0px;
-        justify-content: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         width: 100%;
-        border: 1px solid #131111;
-        background: #efefef;
-        height: auto;
+        height: 26px;
+        background: #ddd;
+        border-bottom: 1px solid #131111;
+        padding: 0 8px;
       }
 
       .close-btn {
-        position: fixed;
-        top: 10px;
-        right: 15px;
         cursor: pointer;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: bold;
         border: 1px solid #131111;
-        border-radius: 10px;   
+        border-radius: 6px;   
         background: #efefef;   
-        box-shadow: 2px 2px 0 #131111;
+        box-shadow: 1px 1px 0 #131111;
+        padding: 0 6px;
+      }
+
+      .modal-content {
+        padding: 20px;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y: auto;
       }
 
       .modal img { 
@@ -136,15 +144,16 @@ export class MyProj extends LitElement {
           <div class="close-bar">
             <div class="close-btn" @click=${this.toggleModal}> X </div>
           </div>
-
-          <img src="${this.image}" alt="${this.title}" />
-          <div class="textwrapper">
-            <h2>${this.title}</h2>
-            <p>${this.para}</p>
-            <p><strong>Date:</strong> ${this.date}</p>
-            <div class="links">
-              ${this.link1 ? html`<a href="${this.link1}" target="_blank">${this.link1name}</a>` : ''}
-              ${this.link2 ? html`<a href="${this.link2}" target="_blank">${this.link2name}</a>` : ''}
+          <div class="modal-content">
+            <img src="${this.image}" alt="${this.title}" />
+            <div class="textwrapper">
+              <h2>${this.title}</h2>
+              <p>${this.para}</p>
+              <p><strong>Date:</strong> ${this.date}</p>
+              <div class="links">
+                ${this.link1 ? html`<a href="${this.link1}" target="_blank">${this.link1name}</a>` : ''}
+                ${this.link2 ? html`<a href="${this.link2}" target="_blank">${this.link2name}</a>` : ''}
+              </div>
             </div>
           </div>
         </div>
