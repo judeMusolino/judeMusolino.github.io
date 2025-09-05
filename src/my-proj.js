@@ -85,7 +85,7 @@ export class MyProj extends LitElement {
 
       .close-bar {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
         height: auto;
         background: #131111;
