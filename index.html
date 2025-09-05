@@ -22,6 +22,8 @@
     </nav>
   </header>
 
+  <div class="overlay" id="overlay"></div>
+
   <section class="hero">
     <p class="name">JUDE MUSOLINO</p>
     <p class="title">&lt; designer and developer &gt;</p>
@@ -64,15 +66,27 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('menu');
+    const overlay = document.getElementById('overlay');
 
-    hamburger.addEventListener('click', () => {
+    function toggleMenu() {
       menu.classList.toggle('active');
-    });
+      overlay.classList.toggle('active');
+    }
 
+    hamburger.addEventListener('click', toggleMenu);
+
+    // Close menu when a link is clicked
     document.querySelectorAll('.menu a').forEach(link => {
       link.addEventListener('click', () => {
         menu.classList.remove('active');
+        overlay.classList.remove('active');
       });
+    });
+
+    // Close menu when clicking on overlay
+    overlay.addEventListener('click', () => {
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
     });
   </script>
 
