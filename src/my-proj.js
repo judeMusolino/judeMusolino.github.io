@@ -78,6 +78,7 @@ export class MyProj extends LitElement {
         position: fixed;
         display: flex; 
         flex-wrap: wrap;
+        justify-content: left;
         box-shadow: 0 6px 6px #13111199;
       }
 
@@ -105,11 +106,12 @@ export class MyProj extends LitElement {
 
       .modal img { 
         max-height: 60vh;
-        max-width: 100%; 
+        max-width: 80%; 
         border-radius: 5px; margin-bottom: 10px; }
 
       .modalwrapper {
         padding: 0;
+        text-align: left;
       }
       .modal h2 { margin-top: 0; }
 
