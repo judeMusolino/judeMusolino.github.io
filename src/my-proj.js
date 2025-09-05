@@ -75,7 +75,6 @@ export class MyProj extends LitElement {
         width: 60%;
         max-height: 90%; 
         padding: 0;
-        
         box-shadow: 0 6px 6px #13111199;
       }
 
@@ -84,7 +83,7 @@ export class MyProj extends LitElement {
         position: fixed;
         display: flex; 
         flex-wrap: wrap;
-        justify-content: left;
+        justify-content: center;
       }
 
       .close-bar {
