@@ -42,7 +42,16 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   color: #3366ff;
-  margin: 2rem; 
+  margin: 0 2rem; 
+}
+
+.menulink {
+  color: #3366ff;
+  text-decoration: none;
+}
+
+.menulink:hover {
+  text-decoration: underline;
 }
 
 .hero {
