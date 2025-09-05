@@ -87,10 +87,11 @@ export class MyProj extends LitElement {
         width: 100%;
         border: 1px solid #131111;
         background: #efefef;
+        height: auto;
       }
 
       .close-btn {
-        position: absolute;
+        position: fixed;
         top: 10px;
         right: 15px;
         cursor: pointer;
