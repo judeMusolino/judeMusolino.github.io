@@ -57,7 +57,7 @@ export class MyProj extends LitElement {
 
       .proj img { width: 100%; height: 180px; object-fit: cover; }
 
-      .proj-title { text-align: center; font-weight: bold; margin: 8px 8px; color: #131111; }
+      .proj-title { text-align: center; font-weight: bold; margin: 8px 8px; color: #efefefef; }
 
       .modal-overlay {
         display: flex;
@@ -84,7 +84,7 @@ export class MyProj extends LitElement {
 
       .close-bar {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
         width: 100%;
         height: 32px;
         background: #efefefef;
@@ -100,7 +100,7 @@ export class MyProj extends LitElement {
         border-radius: 50%;   
         background: #efefef;   
         box-shadow: 1px 1px 0 #131111;
-        padding: 0 6px;
+        padding: 2px 6px;
       }
 
       .modal-content {
