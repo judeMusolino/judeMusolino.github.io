@@ -4,80 +4,182 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Graphic Design | Jude Musolino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <script type="module" src="./src/my-proj.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div id="header-container"></div>
+  <!-- TITLE BAR -->
+  <div class="titlebar">
+    <div class="traffic-lights">
+      <div class="traffic-light tl-close"></div>
+      <div class="traffic-light tl-min"></div>
+      <div class="traffic-light tl-max"></div>
+    </div>
+    <div class="titlebar-text">graphic-design.html — jude-musolino — Visual Studio Code</div>
+    <div class="titlebar-spacer"></div>
+  </div>
 
-  <nav class="back-nav">
-    <a href="" class="back-key">« back</a>
-  </nav>
+  <!-- TAB BAR -->
+  <div class="tabbar">
+    <a class="tab" href="index.html">
+      <span class="tab-icon icon-html">⬡</span>
+      index.html
+      <span class="tab-close">✕</span>
+    </a>
+    <a class="tab" href="projects.html">
+      <span class="tab-icon icon-html">⬡</span>
+      projects.html
+      <span class="tab-close">✕</span>
+    </a>
+    <a class="tab active" href="design.html">
+      <span class="tab-icon icon-html">⬡</span>
+      graphic-design.html
+      <span class="tab-close">✕</span>
+    </a>
+    <a class="tab" href="work.html">
+      <span class="tab-icon icon-html">⬡</span>
+      professional-work.html
+      <span class="tab-close">✕</span>
+    </a>
+    <a class="tab" href="index.html#contact">
+      <span class="tab-icon icon-js">⬡</span>
+      contact.js
+      <span class="tab-close">✕</span>
+    </a>
+  </div>
 
-  <header>
-    <h1 class="page-title">Graphic Design</h1>
-  </header>
+  <!-- WORKSPACE -->
+  <div class="workspace">
 
-    <main>
-        <div class="wrapper2">
-        <my-proj 
-            title="Newsboy"
-            para="I created this merch design for the Penn State Thespian Society. The organization's weekly newsletter is called the 'TWIT', as you can see printed on the newspaper, which stands for 'This Week In Thespians'. This hand-drawn design plays on the concept of a vintage newsboy."
-            image="assets/newsboytwit.png"
-            date="May 2024"
-        ></my-proj>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Explorer</div>
+      <div class="sidebar-folder">
+        <span class="chevron">▾</span>
+        <span>📁</span>
+        <span>PORTFOLIO</span>
+      </div>
+      <a class="sidebar-file" href="index.html">
+        <span class="icon-html">◆</span> index.html
+      </a>
+      <a class="sidebar-file" href="projects.html">
+        <span class="icon-html">◆</span> projects.html
+      </a>
+      <a class="sidebar-file active" href="design.html">
+        <span class="icon-html">◆</span> graphic-design.html
+      </a>
+      <a class="sidebar-file" href="work.html">
+        <span class="icon-html">◆</span> professional-work.html
+      </a>
+      <a class="sidebar-file" href="index.html#contact">
+        <span class="icon-js">◆</span> contact.js
+      </a>
+      <a class="sidebar-file" href="style.css">
+        <span class="icon-css">◆</span> style.css
+      </a>
+      <div class="sidebar-folder" style="margin-top: 6px;">
+        <span class="chevron">▾</span>
+        <span>📁</span>
+        <span>assets</span>
+      </div>
+      <a class="sidebar-file" href="#">
+        <span class="icon-svg">◆</span> newsboytwit.png
+      </a>
+      <a class="sidebar-file" href="#">
+        <span class="icon-svg">◆</span> shakes.jpg
+      </a>
+      <a class="sidebar-file" href="#">
+        <span class="icon-svg">◆</span> brightstar.png
+      </a>
+      <a class="sidebar-file" href="#">
+        <span class="icon-svg">◆</span> poster.png
+      </a>
+    </aside>
 
-        <my-proj 
-            title="Shakespeare"
-            para="I used Adobe Fresco to draw this satirical image of William Shakespeare for buttons for members of the Penn State Thespian Society."
-            image="assets/shakes.jpg"
-            date="Feb 2024"
-        ></my-proj>
+    <!-- EDITOR -->
+    <div class="editor">
 
-        <my-proj 
-            title="Bright Star"
-            para="This is the cover page of a program I created for the Penn State Thespian Society's mainstage show 'Bright Star'. I created the lettering in Adobe and designed the rest in Canva."
-            image="assets/brightstar.png"
-            date="Oct 2023"
-        ></my-proj>
+      <!-- SUB-PAGE HERO -->
+      <div class="subpage-hero">
+        <div class="hero-eyebrow"><span class="cmt">/* graphic-design.html */</span></div>
+        <h1 class="subpage-title">Graphic Design</h1>
+        <p class="subpage-subtitle"><span class="cmt">// a collection of illustration, print, and identity work</span></p>
+      </div>
 
-        <my-proj 
-            title="Something Rotten"
-            para="This is the poster and t-shirt design I created for the Penn State Thespian Society's production of 'Something Rotten!'. I hand-drew the lettering and then transferred it to Adobe Illustrator, where I completed the rest of the design."
-            image="assets/poster.png"
-            date="Apr 2024"
-        ></my-proj>
+      <!-- CODE LINES + project grid -->
+      <div class="code-block">
+
+        <div class="code-line" style="--d:.05s"><span class="ln">1</span><span class="lc"><span class="kw">const </span><span class="vr">projects</span><span class="tx"> = [</span></span></div>
+
+        <!-- project grid injected as array contents -->
+        <div class="code-line cards-line" style="--d:.15s">
+          <span class="ln">2</span>
+          <span class="lc">
+            <div class="proj-grid">
+
+              <my-proj
+                title="Newsboy"
+                para="I created this merch design for the Penn State Thespian Society. The organization's weekly newsletter is called the 'TWIT', as you can see printed on the newspaper, which stands for 'This Week In Thespians'. This hand-drawn design plays on the concept of a vintage newsboy."
+                image="assets/newsboytwit.png"
+                date="May 2024"
+              ></my-proj>
+
+              <my-proj
+                title="Shakespeare"
+                para="I used Adobe Fresco to draw this satirical image of William Shakespeare for buttons for members of the Penn State Thespian Society."
+                image="assets/shakes.jpg"
+                date="Feb 2024"
+              ></my-proj>
+
+              <my-proj
+                title="Bright Star"
+                para="This is the cover page of a program I created for the Penn State Thespian Society's mainstage show 'Bright Star'. I created the lettering in Adobe and designed the rest in Canva."
+                image="assets/brightstar.png"
+                date="Oct 2023"
+              ></my-proj>
+
+              <my-proj
+                title="Something Rotten"
+                para="This is the poster and t-shirt design I created for the Penn State Thespian Society's production of 'Something Rotten!'. I hand-drew the lettering and then transferred it to Adobe Illustrator, where I completed the rest of the design."
+                image="assets/poster.png"
+                date="Apr 2024"
+              ></my-proj>
+
+            </div>
+          </span>
         </div>
-    </main>
-<script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
 
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-        const overlay = document.getElementById('overlay');
+        <div class="code-line" style="--d:.25s"><span class="ln">3</span><span class="lc"><span class="tx">];</span></span></div>
+        <div class="code-line" style="--d:.3s"> <span class="ln">4</span><span class="lc"></span></div>
 
-        hamburger.addEventListener('click', () => {
-          menu.classList.toggle('active');
-          overlay.classList.toggle('active');
-        });
+        <!-- back link as a return statement -->
+        <div class="code-line" style="--d:.35s">
+          <span class="ln">5</span>
+          <span class="lc">
+            <a href="index.html" class="back-return">
+              <span class="cmt">// ← </span><span class="kw">return</span><span class="tx"> </span><span class="str">"index.html"</span>
+            </a>
+          </span>
+        </div>
+        <div class="code-line" style="--d:.4s"><span class="ln">6</span><span class="lc"></span></div>
 
-        document.querySelectorAll('.menu a').forEach(link => {
-          link.addEventListener('click', () => {
-            menu.classList.remove('active');
-            overlay.classList.remove('active');
-          });
-        });
+      </div>
+    </div>
+  </div>
 
-        overlay.addEventListener('click', () => {
-          menu.classList.remove('active');
-          overlay.classList.remove('active');
-        });
-      })
-      .catch(err => console.error('Error loading header:', err));
-  </script>
+  <!-- STATUS BAR -->
+  <div class="statusbar">
+    <div class="sb-item">⎇ &nbsp;main</div>
+    <div class="sb-item">✓ &nbsp;0 errors, 0 warnings</div>
+    <div class="sb-right">
+      <div class="sb-item">4 items</div>
+      <div class="sb-item">UTF-8</div>
+      <div class="sb-item">HTML</div>
+    </div>
+  </div>
+
 </body>
 </html>
