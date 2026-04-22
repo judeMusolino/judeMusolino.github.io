@@ -33,7 +33,7 @@ body {
   background: #131111;
   padding: 1rem;
   font-weight: bold;
-  box-shadow: 0 2px 8px #13111199;
+  border-color: 1px solid #00ddff;
   position: sticky;
   top: 0;
   z-index: 1100;
@@ -59,7 +59,7 @@ body {
     height: 100%;
     background-color: #131111;
     padding: 2rem 1rem;
-    box-shadow: -2px 0 5px #13111199;
+    border-color: 1px solid #00ddff;
     overflow-y: auto;
   }
 
@@ -112,6 +112,7 @@ body {
   font-size: 8rem;
   font-weight: bold;
   color: #efefef;
+  background-color: #3366ff;
 }
 
 .title {
