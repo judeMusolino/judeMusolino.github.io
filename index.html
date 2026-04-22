@@ -91,34 +91,29 @@
 
     <!-- EDITOR -->
     <div class="editor">
+
+      <!-- BIG HERO — breaks out of the code-line grid on purpose -->
+      <div class="hero-block">
+        <div class="hero-eyebrow"><span class="cmt">/* index.html */</span></div>
+        <h1 class="hero-name">&lt;!JUDE MUSOLINO&gt;</h1>
+        <p class="hero-title">&lt; <span class="str">designer</span> <span class="tx">and</span> <span class="tp">developer</span> &gt;<span class="cursor"></span></p>
+      </div>
+
+      <!-- CODE LINES resume below the hero -->
       <div class="code-block">
 
-        <div class="code-line" style="--d:.05s"><span class="ln">1</span><span class="lc dim">&lt;!-- ================================================ --&gt;</span></div>
-        <div class="code-line" style="--d:.1s"> <span class="ln">2</span><span class="lc"><span class="cmt">&lt;!-- Author:&nbsp;&nbsp; </span><span class="tp">Jude Musolino</span><span class="cmt">                         --&gt;</span></span></div>
-        <div class="code-line" style="--d:.15s"><span class="ln">3</span><span class="lc"><span class="cmt">&lt;!-- Role:&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="str">Designer &amp; Developer</span><span class="cmt">                      --&gt;</span></span></div>
-        <div class="code-line" style="--d:.2s"> <span class="ln">4</span><span class="lc"><span class="cmt">&lt;!-- Status:&nbsp;&nbsp; </span><span class="nm">open to opportunities</span><span class="cmt">                     --&gt;</span></span></div>
-        <div class="code-line" style="--d:.25s"><span class="ln">5</span><span class="lc dim">&lt;!-- ================================================ --&gt;</span></div>
+        <div class="code-line" style="--d:.05s"><span class="ln">1</span><span class="lc"><span class="cmt">/**</span></span></div>
+        <div class="code-line" style="--d:.1s"> <span class="ln">2</span><span class="lc"><span class="cmt"> * Welcome to my portfolio.</span></span></div>
+        <div class="code-line" style="--d:.15s"><span class="ln">3</span><span class="lc"><span class="cmt"> * Here you'll find web projects, graphic design,</span></span></div>
+        <div class="code-line" style="--d:.2s"> <span class="ln">4</span><span class="lc"><span class="cmt"> * and professional work — built with care.</span></span></div>
+        <div class="code-line" style="--d:.25s"><span class="ln">5</span><span class="lc"><span class="cmt"> */</span></span></div>
         <div class="code-line" style="--d:.3s"> <span class="ln">6</span><span class="lc"></span></div>
-        <div class="code-line" style="--d:.35s"><span class="ln">7</span><span class="lc"><span class="kw">const </span><span class="vr">jude</span><span class="tx"> = {</span></span></div>
-        <div class="code-line" style="--d:.4s"> <span class="ln">8</span><span class="lc">&nbsp;&nbsp;<span class="vr">name</span><span class="tx">:&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="str">"Jude Musolino"</span><span class="tx">,</span></span></div>
-        <div class="code-line" style="--d:.45s"><span class="ln">9</span><span class="lc">&nbsp;&nbsp;<span class="vr">skills</span><span class="tx">:&nbsp;&nbsp; [</span><span class="str">"HTML"</span><span class="tx">, </span><span class="str">"CSS"</span><span class="tx">, </span><span class="str">"JavaScript"</span><span class="tx">, </span><span class="str">"Design"</span><span class="tx">],</span></span></div>
-        <div class="code-line" style="--d:.5s"> <span class="ln">10</span><span class="lc">&nbsp;&nbsp;<span class="vr">passion</span><span class="tx">:  </span><span class="str">"building clean, functional experiences"</span><span class="tx">,</span></span></div>
-        <div class="code-line" style="--d:.55s"><span class="ln">11</span><span class="lc"><span class="tx">};</span><span class="cursor"></span></span></div>
-        <div class="code-line" style="--d:.6s"> <span class="ln">12</span><span class="lc"></span></div>
 
-        <div class="code-line" style="--d:.65s"><span class="ln">13</span><span class="lc"><span class="cmt">/**</span></span></div>
-        <div class="code-line" style="--d:.7s"> <span class="ln">14</span><span class="lc"><span class="cmt"> * Welcome to my portfolio.</span></span></div>
-        <div class="code-line" style="--d:.75s"><span class="ln">15</span><span class="lc"><span class="cmt"> * Here you'll find web projects, graphic design work,</span></span></div>
-        <div class="code-line" style="--d:.8s"> <span class="ln">16</span><span class="lc"><span class="cmt"> * and professional experience — built with care.</span></span></div>
-        <div class="code-line" style="--d:.85s"><span class="ln">17</span><span class="lc"><span class="cmt"> */</span></span></div>
-        <div class="code-line" style="--d:.9s"> <span class="ln">18</span><span class="lc"></span></div>
+        <div class="code-line" style="--d:.35s"><span class="ln">7</span><span class="lc"><span class="kw">function </span><span class="fn">explore</span><span class="tx">() {</span></span></div>
+        <div class="code-line" style="--d:.4s"><span class="ln">8</span><span class="lc"><span class="cmt">&nbsp;&nbsp;// Click a file to navigate:</span></span></div>
 
-        <div class="code-line" style="--d:.95s"><span class="ln">19</span><span class="lc"><span class="kw">function </span><span class="fn">explore</span><span class="tx">() {</span></span></div>
-        <div class="code-line" style="--d:1s">  <span class="ln">20</span><span class="lc"><span class="cmt">&nbsp;&nbsp;// Click a file to navigate:</span></span></div>
-
-        <!-- File cards as "return value" -->
-        <div class="code-line cards-line" style="--d:1.05s">
-          <span class="ln">21</span>
+        <div class="code-line cards-line" style="--d:.5s">
+          <span class="ln">9</span>
           <span class="lc">
             <div class="cards-row">
               <a class="file-card" href="projects.html">
@@ -139,14 +134,14 @@
             </div>
           </span>
         </div>
-        <div class="code-line" style="--d:1.1s"><span class="ln">22</span><span class="lc"><span class="tx">}</span></span></div>
-        <div class="code-line" style="--d:1.15s"><span class="ln">23</span><span class="lc"></span></div>
+        <div class="code-line" style="--d:.6s"><span class="ln">10</span><span class="lc"><span class="tx">}</span></span></div>
+        <div class="code-line" style="--d:.65s"><span class="ln">11</span><span class="lc"></span></div>
 
-        <div class="code-line" style="--d:1.2s" id="contact"><span class="ln">24</span><span class="lc"><span class="kw">const </span><span class="vr">contact</span><span class="tx"> = {</span></span></div>
-        <div class="code-line" style="--d:1.25s"><span class="ln">25</span><span class="lc">&nbsp;&nbsp;<span class="vr">email</span><span class="tx">:&nbsp;&nbsp;&nbsp;&nbsp; </span><a class="code-link" href="mailto:jude.musolino@gmail.com"><span class="str">"jude.musolino@gmail.com"</span></a><span class="tx">,</span></span></div>
-        <div class="code-line" style="--d:1.3s"> <span class="ln">26</span><span class="lc">&nbsp;&nbsp;<span class="vr">linkedin</span><span class="tx">: </span><a class="code-link" href="#"><span class="str">"linkedin.com/in/jude-musolino"</span></a><span class="tx">,</span></span></div>
-        <div class="code-line" style="--d:1.35s"><span class="ln">27</span><span class="lc"><span class="tx">};</span></span></div>
-        <div class="code-line" style="--d:1.4s"> <span class="ln">28</span><span class="lc"></span></div>
+        <div class="code-line" style="--d:.7s" id="contact"><span class="ln">12</span><span class="lc"><span class="kw">const </span><span class="vr">contact</span><span class="tx"> = {</span></span></div>
+        <div class="code-line" style="--d:.75s"><span class="ln">13</span><span class="lc">&nbsp;&nbsp;<span class="vr">email</span><span class="tx">:&nbsp;&nbsp;&nbsp;&nbsp; </span><a class="code-link" href="mailto:jude.musolino@gmail.com"><span class="str">"jude.musolino@gmail.com"</span></a><span class="tx">,</span></span></div>
+        <div class="code-line" style="--d:.8s"> <span class="ln">14</span><span class="lc">&nbsp;&nbsp;<span class="vr">linkedin</span><span class="tx">: </span><a class="code-link" href="#"><span class="str">"linkedin.com/in/jude-musolino"</span></a><span class="tx">,</span></span></div>
+        <div class="code-line" style="--d:.85s"><span class="ln">15</span><span class="lc"><span class="tx">};</span></span></div>
+        <div class="code-line" style="--d:.9s"> <span class="ln">16</span><span class="lc"></span></div>
 
       </div>
     </div>
