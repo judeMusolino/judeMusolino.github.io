@@ -183,25 +183,16 @@ body {
 }
 
 .contact {
-  text-align: left;
+  text-align: center;
   color: #efefef;
   padding: 2rem;
   background: #131111;
   margin-top: 3rem;
-  margin-left: 3rem; 
-  border-top: 1px solid #00000099; 
-}
-
-.contact.tag {
-  color: #3366ff;
-}
-
-.contact.label {
-  color: #efefef; 
+  border-top: 1px solid #00000099;
 }
 
 .contact a {
-  color: #e7875a;
+  color: #3366ff;
   text-decoration: none;
 }
 
