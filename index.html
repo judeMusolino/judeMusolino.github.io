@@ -4,81 +4,164 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jude Musolino | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-  </style>
 </head>
 <body>
-  <div id="header-container"></div>
 
-  <section class="hero">
-    <p class="name">&lt;!JUDE MUSOLINO &gt;</p>
-    <p class="title">&lt; designer and developer &gt;</p>
-  </section>
-
-  <main class="main">
-    <h2 class="box-title">WELCOME</h2>
-    <div class="main-box">
-      <p>Here you'll find a selection of web pages, graphic design, and class projects that I’ve worked on. They highlight my creativity and technical skills, from building functional and user-friendly websites to developing eye-catching designs.</p>
+  <!-- TITLE BAR -->
+  <div class="titlebar">
+    <div class="traffic-lights">
+      <div class="traffic-light tl-close"></div>
+      <div class="traffic-light tl-min"></div>
+      <div class="traffic-light tl-max"></div>
     </div>
+    <div class="titlebar-text">jude-musolino — portfolio — Visual Studio Code</div>
+    <div class="titlebar-spacer"></div>
+  </div>
 
-    <div class="wrapper">
-      <div class="hook">
-        <a href="projects.html" class="key-link">
-          <img src="assets/folder.svg" alt="Projects Key" class="key" />
-          <span>projects.html</span>
-        </a>
+  <!-- TAB BAR -->
+  <div class="tabbar">
+    <a class="tab active" href="index.html">
+      <span class="tab-icon icon-html">⬡</span>
+      index.html
+      <span class="tab-close">✕</span>
+    </a>
+    <a class="tab" href="projects.html">
+      <span class="tab-icon icon-html">⬡</span>
+      projects.html
+      <span class="tab-close">✕</span>
+    </a>
+    <a class="tab" href="design.html">
+      <span class="tab-icon icon-html">⬡</span>
+      graphic-design.html
+      <span class="tab-close">✕</span>
+    </a>
+    <a class="tab" href="work.html">
+      <span class="tab-icon icon-html">⬡</span>
+      professional-work.html
+      <span class="tab-close">✕</span>
+    </a>
+    <a class="tab" href="#contact">
+      <span class="tab-icon icon-js">⬡</span>
+      contact.js
+      <span class="tab-close">✕</span>
+    </a>
+  </div>
+
+  <!-- WORKSPACE -->
+  <div class="workspace">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Explorer</div>
+      <div class="sidebar-folder">
+        <span class="chevron">▾</span>
+        <span>📁</span>
+        <span>PORTFOLIO</span>
       </div>
-      <div class="hook">
-        <a href="design.html" class="key-link">
-          <img src="assets/folder.svg" alt="Design Key" class="key" />
-          <span>graphic-design.html</span>
-        </a>
+      <a class="sidebar-file active" href="index.html">
+        <span class="icon-html">◆</span> index.html
+      </a>
+      <a class="sidebar-file" href="projects.html">
+        <span class="icon-html">◆</span> projects.html
+      </a>
+      <a class="sidebar-file" href="design.html">
+        <span class="icon-html">◆</span> graphic-design.html
+      </a>
+      <a class="sidebar-file" href="work.html">
+        <span class="icon-html">◆</span> professional-work.html
+      </a>
+      <a class="sidebar-file" href="#contact">
+        <span class="icon-js">◆</span> contact.js
+      </a>
+      <a class="sidebar-file" href="style.css">
+        <span class="icon-css">◆</span> style.css
+      </a>
+      <div class="sidebar-folder" style="margin-top: 6px;">
+        <span class="chevron">▾</span>
+        <span>📁</span>
+        <span>assets</span>
       </div>
-      <div class="hook">
-        <a href="work.html" class="key-link">
-          <img src="assets/folder.svg" alt="Work Key" class="key" />
-          <span>professional-work.html</span>
-        </a>
+      <a class="sidebar-file" href="#">
+        <span class="icon-svg">◆</span> folder.svg
+      </a>
+    </aside>
+
+    <!-- EDITOR -->
+    <div class="editor">
+      <div class="code-block">
+
+        <div class="code-line" style="--d:.05s"><span class="ln">1</span><span class="lc dim">&lt;!-- ================================================ --&gt;</span></div>
+        <div class="code-line" style="--d:.1s"> <span class="ln">2</span><span class="lc"><span class="cmt">&lt;!-- Author:&nbsp;&nbsp; </span><span class="tp">Jude Musolino</span><span class="cmt">                         --&gt;</span></span></div>
+        <div class="code-line" style="--d:.15s"><span class="ln">3</span><span class="lc"><span class="cmt">&lt;!-- Role:&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="str">Designer &amp; Developer</span><span class="cmt">                      --&gt;</span></span></div>
+        <div class="code-line" style="--d:.2s"> <span class="ln">4</span><span class="lc"><span class="cmt">&lt;!-- Status:&nbsp;&nbsp; </span><span class="nm">open to opportunities</span><span class="cmt">                     --&gt;</span></span></div>
+        <div class="code-line" style="--d:.25s"><span class="ln">5</span><span class="lc dim">&lt;!-- ================================================ --&gt;</span></div>
+        <div class="code-line" style="--d:.3s"> <span class="ln">6</span><span class="lc"></span></div>
+        <div class="code-line" style="--d:.35s"><span class="ln">7</span><span class="lc"><span class="kw">const </span><span class="vr">jude</span><span class="tx"> = {</span></span></div>
+        <div class="code-line" style="--d:.4s"> <span class="ln">8</span><span class="lc">&nbsp;&nbsp;<span class="vr">name</span><span class="tx">:&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="str">"Jude Musolino"</span><span class="tx">,</span></span></div>
+        <div class="code-line" style="--d:.45s"><span class="ln">9</span><span class="lc">&nbsp;&nbsp;<span class="vr">skills</span><span class="tx">:&nbsp;&nbsp; [</span><span class="str">"HTML"</span><span class="tx">, </span><span class="str">"CSS"</span><span class="tx">, </span><span class="str">"JavaScript"</span><span class="tx">, </span><span class="str">"Design"</span><span class="tx">],</span></span></div>
+        <div class="code-line" style="--d:.5s"> <span class="ln">10</span><span class="lc">&nbsp;&nbsp;<span class="vr">passion</span><span class="tx">:  </span><span class="str">"building clean, functional experiences"</span><span class="tx">,</span></span></div>
+        <div class="code-line" style="--d:.55s"><span class="ln">11</span><span class="lc"><span class="tx">};</span><span class="cursor"></span></span></div>
+        <div class="code-line" style="--d:.6s"> <span class="ln">12</span><span class="lc"></span></div>
+
+        <div class="code-line" style="--d:.65s"><span class="ln">13</span><span class="lc"><span class="cmt">/**</span></span></div>
+        <div class="code-line" style="--d:.7s"> <span class="ln">14</span><span class="lc"><span class="cmt"> * Welcome to my portfolio.</span></span></div>
+        <div class="code-line" style="--d:.75s"><span class="ln">15</span><span class="lc"><span class="cmt"> * Here you'll find web projects, graphic design work,</span></span></div>
+        <div class="code-line" style="--d:.8s"> <span class="ln">16</span><span class="lc"><span class="cmt"> * and professional experience — built with care.</span></span></div>
+        <div class="code-line" style="--d:.85s"><span class="ln">17</span><span class="lc"><span class="cmt"> */</span></span></div>
+        <div class="code-line" style="--d:.9s"> <span class="ln">18</span><span class="lc"></span></div>
+
+        <div class="code-line" style="--d:.95s"><span class="ln">19</span><span class="lc"><span class="kw">function </span><span class="fn">explore</span><span class="tx">() {</span></span></div>
+        <div class="code-line" style="--d:1s">  <span class="ln">20</span><span class="lc"><span class="cmt">&nbsp;&nbsp;// Click a file to navigate:</span></span></div>
+
+        <!-- File cards as "return value" -->
+        <div class="code-line cards-line" style="--d:1.05s">
+          <span class="ln">21</span>
+          <span class="lc">
+            <div class="cards-row">
+              <a class="file-card" href="projects.html">
+                <div class="fc-icon">📁</div>
+                <div class="fc-name">projects.html</div>
+                <div class="fc-desc">Web builds &amp; dev projects</div>
+              </a>
+              <a class="file-card" href="design.html">
+                <div class="fc-icon">🎨</div>
+                <div class="fc-name">graphic-design.html</div>
+                <div class="fc-desc">Visual design &amp; branding</div>
+              </a>
+              <a class="file-card" href="work.html">
+                <div class="fc-icon">💼</div>
+                <div class="fc-name">professional-work.html</div>
+                <div class="fc-desc">Career experience &amp; clients</div>
+              </a>
+            </div>
+          </span>
+        </div>
+        <div class="code-line" style="--d:1.1s"><span class="ln">22</span><span class="lc"><span class="tx">}</span></span></div>
+        <div class="code-line" style="--d:1.15s"><span class="ln">23</span><span class="lc"></span></div>
+
+        <div class="code-line" style="--d:1.2s" id="contact"><span class="ln">24</span><span class="lc"><span class="kw">const </span><span class="vr">contact</span><span class="tx"> = {</span></span></div>
+        <div class="code-line" style="--d:1.25s"><span class="ln">25</span><span class="lc">&nbsp;&nbsp;<span class="vr">email</span><span class="tx">:&nbsp;&nbsp;&nbsp;&nbsp; </span><a class="code-link" href="mailto:jude.musolino@gmail.com"><span class="str">"jude.musolino@gmail.com"</span></a><span class="tx">,</span></span></div>
+        <div class="code-line" style="--d:1.3s"> <span class="ln">26</span><span class="lc">&nbsp;&nbsp;<span class="vr">linkedin</span><span class="tx">: </span><a class="code-link" href="#"><span class="str">"linkedin.com/in/jude-musolino"</span></a><span class="tx">,</span></span></div>
+        <div class="code-line" style="--d:1.35s"><span class="ln">27</span><span class="lc"><span class="tx">};</span></span></div>
+        <div class="code-line" style="--d:1.4s"> <span class="ln">28</span><span class="lc"></span></div>
+
       </div>
     </div>
-  </main>
+  </div>
 
-  <footer class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jude.musolino@gmail.com">jude.musolino@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/jude-musolino</a></p>
-  </footer>
+  <!-- STATUS BAR -->
+  <div class="statusbar">
+    <div class="sb-item">⎇ &nbsp;main</div>
+    <div class="sb-item">✓ &nbsp;0 errors, 0 warnings</div>
+    <div class="sb-right">
+      <div class="sb-item">Ln 28, Col 1</div>
+      <div class="sb-item">UTF-8</div>
+      <div class="sb-item">HTML</div>
+    </div>
+  </div>
 
-  <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-        const overlay = document.getElementById('overlay');
-
-        hamburger.addEventListener('click', () => {
-          menu.classList.toggle('active');
-          overlay.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.menu a').forEach(link => {
-          link.addEventListener('click', () => {
-            menu.classList.remove('active');
-            overlay.classList.remove('active');
-          });
-        });
-
-        overlay.addEventListener('click', () => {
-          menu.classList.remove('active');
-          overlay.classList.remove('active');
-        });
-      })
-      .catch(err => console.error('Error loading header:', err));
-  </script>
 </body>
 </html>
