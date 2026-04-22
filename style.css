@@ -1,9 +1,10 @@
 body {
   margin: 0;
   font-family: "Space Mono", monospace;
-  background-color: #efefef;
-  color: #131111;
+  color: #efefef;
+  background-color: #131111;
 
+  /*
   background-image: 
     repeating-linear-gradient(
       to right,
@@ -19,7 +20,11 @@ body {
       transparent 1px,
       transparent 40px
     );
+  */
+
+
 }
+
 
 .topbar {
   display: flex;
@@ -35,7 +40,7 @@ body {
 }
 
 .toptext {
-  color:#3366ff;
+  color:#efefef;
 }
 
   .hamburger {
@@ -178,16 +183,25 @@ body {
 }
 
 .contact {
-  text-align: center;
+  text-align: left;
   color: #efefef;
   padding: 2rem;
   background: #131111;
   margin-top: 3rem;
-  border-top: 1px solid #00000099;
+  margin-left: 3rem; 
+  border-top: 1px solid #00000099; 
+}
+
+.contact.tag {
+  color: #3366ff;
+}
+
+.contact.label {
+  color: #efefef; 
 }
 
 .contact a {
-  color: #3366ff;
+  color: #e7875a;
   text-decoration: none;
 }
 
