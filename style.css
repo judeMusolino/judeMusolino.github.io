@@ -70,7 +70,7 @@ body {
 
 /* ── Tab Bar ──────────────────────────────────── */
 .tabbar {
-  height: 40px;
+  height: 42px;
   background: var(--tab-bg);
   display: flex;
   align-items: flex-end;
@@ -82,7 +82,7 @@ body {
 .tabbar::-webkit-scrollbar { display: none; }
 
 .tab {
-  height: 35px;
+  height: 42px;
   padding: 0 14px;
   display: flex;
   align-items: center;
