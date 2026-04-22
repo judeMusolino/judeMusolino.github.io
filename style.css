@@ -33,7 +33,7 @@ body {
   background: #131111;
   padding: 1rem;
   font-weight: bold;
-  border-color: 1px solid #00ddff;
+  border-bottom: 1px solid #00ddff;
   position: sticky;
   top: 0;
   z-index: 1100;
@@ -59,7 +59,7 @@ body {
     height: 100%;
     background-color: #131111;
     padding: 2rem 1rem;
-    border-color: 1px solid #00ddff;
+    border-left: 1px solid #00ddff;
     overflow-y: auto;
   }
 
