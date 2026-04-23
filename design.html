@@ -79,350 +79,73 @@
       </a>
     </aside>
 
-    <!-- EDITOR -->
-    <div class="editor">
+    <!-- EDITOR: populated by portfolio.js -->
+    <div class="editor" id="editor"></div>
 
-      <!-- SUBPAGE HERO -->
-      <div class="subpage-hero">
-        <div class="hero-eyebrow"><span class="cmt">/* graphic-design.html */</span></div>
-        <h1 class="subpage-title">Graphic Design</h1>
-        <p class="subpage-subtitle"><span class="cmt">// click any project to open it</span></p>
-      </div>
-
-      <!-- CODE BLOCK: project list -->
-      <div class="code-block">
-
-        <div class="code-line" style="--d:.05s">
-          <span class="ln">1</span>
-          <span class="lc"><span class="kw">const </span><span class="vr">projects</span><span class="tx"> = [</span></span>
-        </div>
-
-        <!-- PROJECT 1 -->
-        <div class="code-line" style="--d:.12s">
-          <span class="ln">2</span>
-          <span class="lc">
-            <div class="proj-row" onclick="openProject('newsboy')">
-              <img class="proj-row-thumb" src="assets/newsboytwit.png" alt="Newsboy" />
-              <span class="proj-row-name">"Newsboy"</span>
-              <span class="proj-row-date tx">May 2024</span>
-              <span class="proj-row-arrow">▶</span>
-            </div>
-          </span>
-        </div>
-
-        <!-- PROJECT 2 -->
-        <div class="code-line" style="--d:.19s">
-          <span class="ln">3</span>
-          <span class="lc">
-            <div class="proj-row" onclick="openProject('shakespeare')">
-              <img class="proj-row-thumb" src="assets/shakes.jpg" alt="Shakespeare" />
-              <span class="proj-row-name">"Shakespeare"</span>
-              <span class="proj-row-date tx">Feb 2024</span>
-              <span class="proj-row-arrow">▶</span>
-            </div>
-          </span>
-        </div>
-
-        <!-- PROJECT 3 -->
-        <div class="code-line" style="--d:.26s">
-          <span class="ln">4</span>
-          <span class="lc">
-            <div class="proj-row" onclick="openProject('brightstar')">
-              <img class="proj-row-thumb" src="assets/brightstar.png" alt="Bright Star" />
-              <span class="proj-row-name">"Bright Star"</span>
-              <span class="proj-row-date tx">Oct 2023</span>
-              <span class="proj-row-arrow">▶</span>
-            </div>
-          </span>
-        </div>
-
-        <!-- PROJECT 4 -->
-        <div class="code-line" style="--d:.33s">
-          <span class="ln">5</span>
-          <span class="lc">
-            <div class="proj-row" onclick="openProject('somethingrotten')">
-              <img class="proj-row-thumb" src="assets/poster.png" alt="Something Rotten" />
-              <span class="proj-row-name">"Something Rotten"</span>
-              <span class="proj-row-date tx">Apr 2024</span>
-              <span class="proj-row-arrow">▶</span>
-            </div>
-          </span>
-        </div>
-
-        <div class="code-line" style="--d:.4s">
-          <span class="ln">6</span>
-          <span class="lc"><span class="tx">];</span></span>
-        </div>
-        <div class="code-line" style="--d:.46s">
-          <span class="ln">7</span>
-          <span class="lc"></span>
-        </div>
-
-        <!-- Back -->
-        <div class="code-line" style="--d:.52s">
-          <span class="ln">8</span>
-          <span class="lc">
-            <a href="index.html" class="back-return">
-              <span class="cmt">// ← </span><span class="kw">return</span><span class="tx"> </span><span class="str">"home.html"</span>
-            </a>
-          </span>
-        </div>
-
-      </div>
-
-      <!-- ═══════════════════════════════════════
-           EXPANDED DETAIL PANELS
-           (one per project, all hidden by default)
-           ═══════════════════════════════════════ -->
-
-      <!-- NEWSBOY -->
-      <div class="proj-detail-overlay" id="detail-newsboy">
-        <div class="detail-topbar">
-          <div class="detail-breadcrumb">graphic-design.html &nbsp;›&nbsp; <span>"Newsboy"</span></div>
-          <button class="detail-close" onclick="closeProject('newsboy')">✕ &nbsp;close</button>
-        </div>
-        <div class="detail-body">
-          <div class="detail-image-panel">
-            <img src="assets/newsboytwit.png" alt="Newsboy" />
-          </div>
-          <div class="detail-info-panel">
-            <div>
-              <div class="detail-code-line detail-title-line">
-                <div class="detail-ln">1</div>
-                <div class="detail-lc"><span class="detail-title-text">Newsboy</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">2</div>
-                <div class="detail-lc"><span class="cmt">// May 2024</span></div>
-              </div>
-            </div>
-            <div>
-              <div class="detail-code-line">
-                <div class="detail-ln">3</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">desc</span><span class="tx"> =</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">4</div>
-                <div class="detail-lc"><span class="str">"I created this merch design for the Penn State Thespian Society. The organization's weekly newsletter is called the 'TWIT', as you can see printed on the newspaper, which stands for 'This Week In Thespians'. This hand-drawn design plays on the concept of a vintage newsboy."</span></div>
-              </div>
-            </div>
-            <div>
-              <div class="detail-code-line">
-                <div class="detail-ln">5</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">links</span><span class="tx"> = {</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">6</div>
-                <div class="detail-lc">&nbsp;&nbsp;<span class="vr">view</span><span class="tx">: </span><a class="detail-link" href="#"><span class="str">"link-to-project"</span></a><span class="tx">,</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">7</div>
-                <div class="detail-lc">&nbsp;&nbsp;<span class="vr">shop</span><span class="tx">: </span><a class="detail-link" href="#"><span class="str">"link-to-merch"</span></a><span class="tx">,</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">8</div>
-                <div class="detail-lc"><span class="tx">};</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SHAKESPEARE -->
-      <div class="proj-detail-overlay" id="detail-shakespeare">
-        <div class="detail-topbar">
-          <div class="detail-breadcrumb">graphic-design.html &nbsp;›&nbsp; <span>"Shakespeare"</span></div>
-          <button class="detail-close" onclick="closeProject('shakespeare')">✕ &nbsp;close</button>
-        </div>
-        <div class="detail-body">
-          <div class="detail-image-panel">
-            <img src="assets/shakes.jpg" alt="Shakespeare" />
-          </div>
-          <div class="detail-info-panel">
-            <div>
-              <div class="detail-code-line detail-title-line">
-                <div class="detail-ln">1</div>
-                <div class="detail-lc"><span class="detail-title-text">Shakespeare</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">2</div>
-                <div class="detail-lc"><span class="cmt">// Feb 2024</span></div>
-              </div>
-            </div>
-            <div>
-              <div class="detail-code-line">
-                <div class="detail-ln">3</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">desc</span><span class="tx"> =</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">4</div>
-                <div class="detail-lc"><span class="str">"I used Adobe Fresco to draw this satirical image of William Shakespeare for buttons for members of the Penn State Thespian Society."</span></div>
-              </div>
-            </div>
-            <div>
-              <div class="detail-code-line">
-                <div class="detail-ln">5</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">links</span><span class="tx"> = {</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">6</div>
-                <div class="detail-lc">&nbsp;&nbsp;<span class="vr">view</span><span class="tx">: </span><a class="detail-link" href="#"><span class="str">"link-to-project"</span></a><span class="tx">,</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">7</div>
-                <div class="detail-lc"><span class="tx">};</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- BRIGHT STAR -->
-      <div class="proj-detail-overlay" id="detail-brightstar">
-        <div class="detail-topbar">
-          <div class="detail-breadcrumb">graphic-design.html &nbsp;›&nbsp; <span>"Bright Star"</span></div>
-          <button class="detail-close" onclick="closeProject('brightstar')">✕ &nbsp;close</button>
-        </div>
-        <div class="detail-body">
-          <div class="detail-image-panel">
-            <img src="assets/brightstar.png" alt="Bright Star" />
-          </div>
-          <div class="detail-info-panel">
-            <div>
-              <div class="detail-code-line detail-title-line">
-                <div class="detail-ln">1</div>
-                <div class="detail-lc"><span class="detail-title-text">Bright Star</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">2</div>
-                <div class="detail-lc"><span class="cmt">// Oct 2023</span></div>
-              </div>
-            </div>
-            <div>
-              <div class="detail-code-line">
-                <div class="detail-ln">3</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">desc</span><span class="tx"> =</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">4</div>
-                <div class="detail-lc"><span class="str">"This is the cover page of a program I created for the Penn State Thespian Society's mainstage show 'Bright Star'. I created the lettering in Adobe and designed the rest in Canva."</span></div>
-              </div>
-            </div>
-            <div>
-              <div class="detail-code-line">
-                <div class="detail-ln">5</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">links</span><span class="tx"> = {</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">6</div>
-                <div class="detail-lc">&nbsp;&nbsp;<span class="vr">view</span><span class="tx">: </span><a class="detail-link" href="#"><span class="str">"link-to-project"</span></a><span class="tx">,</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">7</div>
-                <div class="detail-lc">&nbsp;&nbsp;<span class="vr">program</span><span class="tx">: </span><a class="detail-link" href="#"><span class="str">"link-to-program-pdf"</span></a><span class="tx">,</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">8</div>
-                <div class="detail-lc"><span class="tx">};</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SOMETHING ROTTEN -->
-      <div class="proj-detail-overlay" id="detail-somethingrotten">
-        <div class="detail-topbar">
-          <div class="detail-breadcrumb">graphic-design.html &nbsp;›&nbsp; <span>"Something Rotten"</span></div>
-          <button class="detail-close" onclick="closeProject('somethingrotten')">✕ &nbsp;close</button>
-        </div>
-        <div class="detail-body">
-          <div class="detail-image-panel">
-            <img src="assets/poster.png" alt="Something Rotten" />
-          </div>
-          <div class="detail-info-panel">
-            <div>
-              <div class="detail-code-line detail-title-line">
-                <div class="detail-ln">1</div>
-                <div class="detail-lc"><span class="detail-title-text">Something Rotten</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">2</div>
-                <div class="detail-lc"><span class="cmt">// Apr 2024</span></div>
-              </div>
-            </div>
-            <div>
-              <div class="detail-code-line">
-                <div class="detail-ln">3</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">desc</span><span class="tx"> =</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">4</div>
-                <div class="detail-lc"><span class="str">"This is the poster and t-shirt design I created for the Penn State Thespian Society's production of 'Something Rotten!'. I hand-drew the lettering and then transferred it to Adobe Illustrator, where I completed the rest of the design."</span></div>
-              </div>
-            </div>
-            <div>
-              <div class="detail-code-line">
-                <div class="detail-ln">5</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">links</span><span class="tx"> = {</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">6</div>
-                <div class="detail-lc">&nbsp;&nbsp;<span class="vr">poster</span><span class="tx">: </span><a class="detail-link" href="#"><span class="str">"link-to-poster"</span></a><span class="tx">,</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">7</div>
-                <div class="detail-lc">&nbsp;&nbsp;<span class="vr">shirt</span><span class="tx">&nbsp;: </span><a class="detail-link" href="#"><span class="str">"link-to-shirt"</span></a><span class="tx">,</span></div>
-              </div>
-              <div class="detail-code-line">
-                <div class="detail-ln">8</div>
-                <div class="detail-lc"><span class="tx">};</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /editor -->
-  </div><!-- /workspace -->
+  </div>
 
   <!-- STATUS BAR -->
   <div class="statusbar">
     <div class="sb-item">☍ &nbsp;main</div>
-    <div class="sb-item" id="status-msg">✓ &nbsp;4 projects</div>
+    <div class="sb-item" id="status-msg">loading...</div>
     <div class="sb-right">
-      <div class="sb-item">Ln 8, Col 1</div>
       <div class="sb-item">UTF-8</div>
       <div class="sb-item">HTML</div>
     </div>
   </div>
 
+  <script src="portfolio.js"></script>
   <script>
-    function openProject(id) {
-      const panel = document.getElementById('detail-' + id);
-      if (!panel) return;
-      // close any already open
-      document.querySelectorAll('.proj-detail-overlay.open').forEach(el => el.classList.remove('open'));
-      panel.classList.add('open');
-      // scroll panel to top
-      panel.scrollTop = 0;
-      // update status bar
-      const name = panel.querySelector('.detail-breadcrumb span').textContent;
-      document.getElementById('status-msg').textContent = '▶  ' + name;
-    }
-
-    function closeProject(id) {
-      const panel = document.getElementById('detail-' + id);
-      if (panel) panel.classList.remove('open');
-      document.getElementById('status-msg').textContent = '✓  4 projects';
-    }
-
-    // Close on Escape key
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.proj-detail-overlay.open').forEach(el => el.classList.remove('open'));
-        document.getElementById('status-msg').textContent = '✓  4 projects';
-      }
+    renderPortfolioPage({
+      pageFile: 'graphic-design.html',
+      title: 'Graphic Design',
+      subtitle: '// click any project to open it',
+      statusCount: '4 projects',
+      projects: [
+        {
+          id: 'newsboy',
+          title: 'Newsboy',
+          date: 'May 2024',
+          image: 'assets/newsboytwit.png',
+          description: "I created this merch design for the Penn State Thespian Society. The organization's weekly newsletter is called the 'TWIT', as you can see printed on the newspaper, which stands for 'This Week In Thespians'. This hand-drawn design plays on the concept of a vintage newsboy.",
+          links: [
+            { label: 'view', text: 'link-to-project', href: '#' },
+            { label: 'shop', text: 'link-to-merch',   href: '#' },
+          ]
+        },
+        {
+          id: 'shakespeare',
+          title: 'Shakespeare',
+          date: 'Feb 2024',
+          image: 'assets/shakes.jpg',
+          description: "I used Adobe Fresco to draw this satirical image of William Shakespeare for buttons for members of the Penn State Thespian Society.",
+          links: [
+            { label: 'view', text: 'link-to-project', href: '#' },
+          ]
+        },
+        {
+          id: 'brightstar',
+          title: 'Bright Star',
+          date: 'Oct 2023',
+          image: 'assets/brightstar.png',
+          description: "This is the cover page of a program I created for the Penn State Thespian Society's mainstage show 'Bright Star'. I created the lettering in Adobe and designed the rest in Canva.",
+          links: [
+            { label: 'view',    text: 'link-to-project',    href: '#' },
+            { label: 'program', text: 'link-to-program-pdf', href: '#' },
+          ]
+        },
+        {
+          id: 'somethingrotten',
+          title: 'Something Rotten',
+          date: 'Apr 2024',
+          image: 'assets/poster.png',
+          description: "This is the poster and t-shirt design I created for the Penn State Thespian Society's production of 'Something Rotten!'. I hand-drew the lettering and then transferred it to Adobe Illustrator, where I completed the rest of the design.",
+          links: [
+            { label: 'poster', text: 'link-to-poster', href: '#' },
+            { label: 'shirt',  text: 'link-to-shirt',  href: '#' },
+          ]
+        },
+      ]
     });
   </script>
 
