@@ -353,7 +353,6 @@ body {
 .back-return {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
   text-decoration: none;
   font-size: 0.84rem;
   transition: opacity 0.15s;
@@ -364,7 +363,7 @@ body {
 .proj-row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
   cursor: pointer;
   padding: 5px 0;
   border-radius: 4px;
@@ -374,8 +373,8 @@ body {
 .proj-row:hover { background: rgba(255,255,255,0.04); }
 
 .proj-row-thumb {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   object-fit: cover;
   border-radius: 3px;
   border: 1px solid var(--card-border);
