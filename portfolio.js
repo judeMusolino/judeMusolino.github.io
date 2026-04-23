@@ -97,7 +97,7 @@ function renderPortfolioPage(config) {
               </div>
               <div class="detail-code-line">
                 <div class="detail-ln">5</div>
-                <div class="detail-lc"><span class="str">"${p.description}"</span></div>
+                <div class="detail-lc"><span class="tx">"${p.description}"</span></div>
               </div>
             </div>
             <div>
