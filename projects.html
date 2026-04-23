@@ -4,93 +4,151 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Jude Musolino</title>
-  <script type="module" src="./src/my-proj.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div id="header-container"></div>
-
-  <nav class="back-nav">
-    <a href="" class="back-key">« back</a>
-  </nav>
-
-  <header>
-    <h1 class="page-title">Projects</h1>
-  </header>
-
-  <main>
-    <div class="wrapper2">
-      <my-proj 
-        title="Grocery Delivery Application"
-        para="This is a group project for a human-centered design course I took, in which we created a prototype for a grocery delivery app."
-        image="assets/grocery.png"
-        date="Aug 2023"
-        link1="https://docs.google.com/presentation/d/1T_tmcRuNaD94F_Gi3qayIK0iAhrdTNOY/edit?usp=sharing&ouid=107130079619958913921&rtpof=true&sd=true"
-        link1name="PowerPoint"
-      ></my-proj>
-
-      <my-proj 
-        title="Assorted Web Components"
-        para="This web page contains a variety of web components I worked on throughout the semester. The first is an element that allows the user to add users to the system and save them as their 'party', visualized as characters that correspond to the usernames the user enters. This would be utilized on the hax.psu.edu website to share web pages with other users. The second is a counter that lets the user add or subtract numbers to it. The code has a minimum, a maximum, and a starting number, with the color of the number changing on the maximum, the minimum, and the number 18 and confetti on 21. The third web component is a simple card that contains an image, a title, a header, a button link to an external site, and a description box/ details tag. When the details tag is open (default), the card has a property 'fancy' that adds an outline and box shadow to the card."
-        image="assets/haxparty.png"
-        date="Mar 2024"
-        link1="https://polaris-chip-musolino.vercel.app/"
-        link1name="Vercel"
-        link2="https://github.com/judeMusolino/polaris-chipMusolino"
-        link2name="Github"
-      ></my-proj>
-
-      <my-proj 
-        title="Water Bottle Application"
-        para="This is a group project from my human-centered design course, in which we created a prototype for an app or a water bottle that tracks your water intake. "
-        image="assets/workout.png"
-        date="Apr 2023"
-        link1="https://docs.google.com/presentation/d/1_iPHeVN4yoMHwTLLV1vBIqFSDFyjEELA/edit?usp=sharing&ouid=107130079619958913921&rtpof=true&sd=true"
-        link1name="Powerpoint"
-      ></my-proj>
-
-      <my-proj 
-        title="Image Gallery Project"
-        para="The goal of the project was to create an image gallery feature that would allow the user to click on any of the paragraph-separated images on the page and open up a more zoomed-in version of the image with a longer description of the image. This view also has arrows on either side to navigate to the other images, a number showing what slide of the image gallery the user is on (ex. 2 of 4), and an X to close the dialog. A couple of key features of this are hover states for the images that make the image 'pop' off the page, and the use of a Singleton design pattern to manage the content in the body and listen for the media-image tags in the content. The focus of the project was functionality, rather than design. "
-        image="assets/imageGal.png"
-        date="Apr 2024"
-        link1="https://project-2-image-gallery-musolino.vercel.app/"
-        link1name="Vercel"
-        link2="https://github.com/judeMusolino/project-2-image-gallery"
-        link2name="Github"
-      ></my-proj>
+  <!-- TITLE BAR -->
+  <div class="titlebar">
+    <div class="traffic-lights">
+      <div class="traffic-light tl-close"></div>
+      <div class="traffic-light tl-min"></div>
+      <div class="traffic-light tl-max"></div>
     </div>
-  </main>
+    <div class="titlebar-text">jude-musolino — portfolio</div>
+    <div class="titlebar-spacer"></div>
+  </div>
 
+  <!-- TAB BAR -->
+  <div class="tabbar">
+    <a class="tab" href="index.html">
+      <span class="tab-icon icon-js">🛈</span>
+      home.html
+    </a>
+    <a class="tab active" href="projects.html">
+      <span class="tab-icon icon-html">&lt;&gt;</span>
+      projects.html
+    </a>
+    <a class="tab" href="design.html">
+      <span class="tab-icon icon-html">&lt;&gt;</span>
+      graphic-design.html
+    </a>
+    <a class="tab" href="work.html">
+      <span class="tab-icon icon-html">&lt;&gt;</span>
+      professional-work.html
+    </a>
+    <a class="tab" href="index.html#contact">
+      <span class="tab-icon icon-js">✉</span>
+      contact.js
+    </a>
+  </div>
+
+  <!-- WORKSPACE -->
+  <div class="workspace">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Explorer</div>
+      <div class="sidebar-folder">
+        <span class="chevron">🖿</span>
+        <span>PORTFOLIO</span>
+      </div>
+      <a class="sidebar-file" href="index.html">
+        <span class="icon-js">🛈</span> home.html
+      </a>
+      <a class="sidebar-file active" href="projects.html">
+        <span class="icon-html">&lt;&gt;</span> projects.html
+      </a>
+      <a class="sidebar-file" href="design.html">
+        <span class="icon-html">&lt;&gt;</span> graphic-design.html
+      </a>
+      <a class="sidebar-file" href="work.html">
+        <span class="icon-html">&lt;&gt;</span> professional-work.html
+      </a>
+      <a class="sidebar-file" href="index.html#contact">
+        <span class="icon-js">✉</span> contact.js
+      </a>
+      <div class="sidebar-folder" style="margin-top: 6px;">
+        <span class="chevron">🖿</span>
+        <span>additional files</span>
+      </div>
+      <a class="sidebar-file" href="#">
+        <span class="icon-svg">🗎</span> resume.docx
+      </a>
+    </aside>
+
+    <!-- EDITOR: populated by portfolio.js -->
+    <div class="editor" id="editor"></div>
+
+  </div>
+
+  <!-- STATUS BAR -->
+  <div class="statusbar">
+    <div class="sb-item">☍ &nbsp;main</div>
+    <div class="sb-item" id="status-msg">loading...</div>
+    <div class="sb-right">
+      <div class="sb-item">UTF-8</div>
+      <div class="sb-item">HTML</div>
+    </div>
+  </div>
+
+  <script src="portfolio.js"></script>
   <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-        const overlay = document.getElementById('overlay');
-
-        hamburger.addEventListener('click', () => {
-          menu.classList.toggle('active');
-          overlay.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.menu a').forEach(link => {
-          link.addEventListener('click', () => {
-            menu.classList.remove('active');
-            overlay.classList.remove('active');
-          });
-        });
-
-        overlay.addEventListener('click', () => {
-          menu.classList.remove('active');
-          overlay.classList.remove('active');
-        });
-      })
-      .catch(err => console.error('Error loading header:', err));
+    renderPortfolioPage({
+      pageFile: 'projects.html',
+      title: 'Projects',
+      subtitle: '// click any project to open it',
+      statusCount: '4 projects',
+      projects: [
+        {
+          id: 'groceryapp',
+          title: 'Grocery Delivery Application',
+          date: 'Aug 2023',
+          image: 'assets/grocery.png',
+          description: "This is a group project for a human-centered design course I took, in which we created a prototype for a grocery delivery app.",
+          links: [
+            { label: 'ppt', text: 'powerpoint-link', href: 'https://docs.google.com/presentation/d/1T_tmcRuNaD94F_Gi3qayIK0iAhrdTNOY/edit?usp=sharing&ouid=107130079619958913921&rtpof=true&sd=true' },
+          ]
+        },
+        {
+          id: 'webcomponents',
+          title: 'Assorted Web Components',
+          date: 'Mar 2024',
+          image: 'assets/haxparty.png',
+          description: "This web page contains a variety of web components I worked on throughout the semester. The first is an element that allows the user to add users to the system and save them as their 'party', visualized as characters that correspond to the usernames the user enters. This would be utilized on the hax.psu.edu website to share web pages with other users. The second is a counter that lets the user add or subtract numbers to it. The code has a minimum, a maximum, and a starting number, with the color of the number changing on the maximum, the minimum, and the number 18 and confetti on 21. The third web component is a simple card that contains an image, a title, a header, a button link to an external site, and a description box/ details tag. When the details tag is open (default), the card has a property 'fancy' that adds an outline and box shadow to the card.",
+          links: [
+            { label: 'vercel', text: 'vercel-link', href: 'https://polaris-chip-musolino.vercel.app/' },
+            
+            { label: 'git', text: 'github-link', href: 'https://github.com/judeMusolino/polaris-chipMusolino' },
+          ]
+        },
+        {
+          id: 'waterapp',
+          title: 'Water Bottle Application',
+          date: 'Apr 2023',
+          image: 'assets/workout.png',
+          description: "This is a group project from my human-centered design course, in which we created a prototype for an app or a water bottle that tracks your water intake.",
+          links: [
+            { label: 'ppt2', text: 'powerpoint-link', href: 'https://docs.google.com/presentation/d/1_iPHeVN4yoMHwTLLV1vBIqFSDFyjEELA/edit?usp=sharing&ouid=107130079619958913921&rtpof=true&sd=true' },
+          ]
+        },
+        {
+          id: 'imagegallery',
+          title: 'Image Gallery Project',
+          date: 'Apr 2024',
+          image: 'assets/imageGal.png',
+          description: "The goal of the project was to create an image gallery feature that would allow the user to click on any of the paragraph-separated images on the page and open up a more zoomed-in version of the image with a longer description of the image. This view also has arrows on either side to navigate to the other images, a number showing what slide of the image gallery the user is on (ex. 2 of 4), and an X to close the dialog. A couple of key features of this are hover states for the images that make the image 'pop' off the page, and the use of a Singleton design pattern to manage the content in the body and listen for the media-image tags in the content. The focus of the project was functionality, rather than design.",
+          links: [
+            { label: 'vercel2', text: 'vercel-link', href: 'https://project-2-image-gallery-musolino.vercel.app/' },
+            
+            { label: 'git2', text: 'github-link', href: 'https://github.com/judeMusolino/project-2-image-gallery' },
+          ]
+        },
+      ]
+    });
   </script>
+
 </body>
 </html>

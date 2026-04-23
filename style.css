@@ -392,6 +392,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-right: 2px;
 }
 
 .proj-row-date {
