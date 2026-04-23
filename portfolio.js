@@ -130,6 +130,7 @@ function renderPortfolioPage(config) {
     if (!panel) return;
     panel.classList.add('open');
     panel.scrollTop = 0;
+    editor.scrollTop = 0;
     const name = panel.querySelector('.detail-breadcrumb span').textContent;
     if (statusMsg) statusMsg.textContent = '▶  ' + name;
   };

@@ -197,6 +197,11 @@ body {
 }
 .code-line:hover { background: rgba(255,255,255,0.03); }
 
+.code-line:has(.proj-row) {
+  min-height: unset;
+  align-items: center;
+}
+
 @keyframes line-in {
   from { opacity: 0; transform: translateY(5px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -365,7 +370,7 @@ body {
   align-items: center;
   gap: 4px;
   cursor: pointer;
-  padding: 0px 0;
+  padding: 2px 0;
   border-radius: 4px;
   transition: background 0.15s;
   width: 100%;
@@ -373,8 +378,8 @@ body {
 .proj-row:hover { background: rgba(255,255,255,0.04); }
 
 .proj-row-thumb {
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   object-fit: cover;
   border-radius: 3px;
   border: 1px solid var(--card-border);
