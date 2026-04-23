@@ -64,7 +64,7 @@ function renderPortfolioPage(config) {
         </div>
       </div>`).join('');
 
-    const closingLineNum = 5 + p.links.length;
+    const closingLineNum = 7 + p.links.length;
 
     return `
       <div class="proj-detail-overlay" id="detail-${p.id}">
@@ -90,16 +90,19 @@ function renderPortfolioPage(config) {
               </div>
               <div class="detail-code-line">
                 <div class="detail-ln">3</div>
-                <div class="detail-lc"><span class="kw">const </span><span class="vr">desc</span><span class="tx"> =</span></div>
               </div>
               <div class="detail-code-line">
                 <div class="detail-ln">4</div>
+                <div class="detail-lc"><span class="kw">const </span><span class="vr">desc</span><span class="tx"> =</span></div>
+              </div>
+              <div class="detail-code-line">
+                <div class="detail-ln">5</div>
                 <div class="detail-lc"><span class="str">"${p.description}"</span></div>
               </div>
             </div>
             <div>
               <div class="detail-code-line">
-                <div class="detail-ln">5</div>
+                <div class="detail-ln">6</div>
                 <div class="detail-lc"><span class="kw">const </span><span class="vr">links</span><span class="tx"> = {</span></div>
               </div>
               ${linkLines}
