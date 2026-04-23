@@ -88,8 +88,6 @@ function renderPortfolioPage(config) {
                 <div class="detail-ln">2</div>
                 <div class="detail-lc"><span class="cmt">// ${p.date}</span></div>
               </div>
-            </div>
-            <div>
               <div class="detail-code-line">
                 <div class="detail-ln">3</div>
                 <div class="detail-lc"><span class="kw">const </span><span class="vr">desc</span><span class="tx"> =</span></div>
